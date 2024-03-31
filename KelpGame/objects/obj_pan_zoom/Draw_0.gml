@@ -9,3 +9,4 @@ for (var i = 1; i > 0; i -= 0.1) {
 	var _scaled_x = ((i * 1920) - 1920) / 2;
 	draw_rectangle(0 - _scaled_x, 0, 0 - _scaled_x + (1920 * i), 1080 * i, true);	
 }
+

@@ -10,7 +10,7 @@ surface_set_target(_surf);
 
 
 
-draw_clear_alpha(c_black, 0.2);
+draw_clear_alpha(c_black, 1);
 
 //draw_rectangle(0, 0, 1920 * _w_scale, 1080 * _h_scale, false);
 
@@ -25,3 +25,4 @@ surface_reset_target();
 draw_surface(_surf,0, 0);
 
 surface_free(_surf);
+

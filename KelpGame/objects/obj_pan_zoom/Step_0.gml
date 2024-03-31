@@ -4,18 +4,29 @@
 var _w_scale = obj_window_scaler.w_ratio;
 var _h_scale = obj_window_scaler.h_ratio;
 
-scale = clamp(scale, 0.5, 1);
 
-//if point_in_rectangle(window_mouse_get_x(), window_mouse_get_y(), 82, 540, )
+scale = lerp(0.5, 1, obj_parent_slider.val);
+
+if point_in_rectangle(window_mouse_get_x() - window_get_x(), window_mouse_get_y(), 82, 82, 540, 540) && global.draggable = true {
 
 
 if mouse_check_button_pressed(mb_left) {
 	drag_x = mouse_x;
+	drag_y = mouse_y;
 }
 
 if mouse_check_button(mb_left) {
+	window_set_cursor(cr_drag);
 	view_x = drag_x - (mouse_x - view_x);
 	view_x = max(458 - (80), min(view_x, (room_width - 458 - (80))));
+	view_y = drag_y - (mouse_y - view_y);
+	view_y = max(-80, min(view_y, (room_height - 1080 + 80)));
+} else {
+	window_set_cursor(cr_default);	
+}
+
+} else {
+	window_set_cursor(cr_default);	
 }
 
 
