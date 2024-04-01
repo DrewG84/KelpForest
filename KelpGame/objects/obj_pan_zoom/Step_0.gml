@@ -5,9 +5,9 @@ var _w_scale = obj_window_scaler.w_ratio;
 var _h_scale = obj_window_scaler.h_ratio;
 
 
-scale = lerp(0.5, 1, obj_parent_slider.val);
+scale = lerp(0.5, 1, obj_zoom_slider.val);
 
-if point_in_rectangle(window_mouse_get_x() - window_get_x(), window_mouse_get_y(), 82, 82, 540, 540) && global.draggable = true {
+if point_in_rectangle(window_mouse_get_x() - window_get_x(), window_mouse_get_y() - window_get_y(), 82 * _w_scale, 82 * _h_scale, (916 + 82) * _w_scale,  (916 + 82) * _h_scale) && global.draggable = true {
 
 
 if mouse_check_button_pressed(mb_left) {
@@ -22,19 +22,11 @@ if mouse_check_button(mb_left) {
 	view_y = drag_y - (mouse_y - view_y);
 	view_y = max(-80, min(view_y, (room_height - 1080 + 80)));
 } else {
-	window_set_cursor(cr_default);	
+	window_set_cursor(cr_handpoint);	
 }
 
 } else {
 	window_set_cursor(cr_default);	
-}
-
-
-if keyboard_check(vk_right) {
-	view_x += 5;	
-}
-if keyboard_check(vk_left) {
-	view_x -= 5;	
 }
 
 var _scaled_x = (((scale * 1920) - 1920) / 2) + (458 * ((1 - scale) + 1));

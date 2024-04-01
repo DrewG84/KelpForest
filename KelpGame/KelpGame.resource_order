@@ -18,8 +18,11 @@
     {"name":"Timelines","order":7,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_focus_slider","order":1,"path":"objects/obj_focus_slider/obj_focus_slider.yy",},
     {"name":"obj_frame_drawer","order":1,"path":"objects/obj_frame_drawer/obj_frame_drawer.yy",},
+    {"name":"obj_kelp","order":5,"path":"objects/obj_kelp/obj_kelp.yy",},
     {"name":"obj_pan_zoom","order":2,"path":"objects/obj_pan_zoom/obj_pan_zoom.yy",},
+    {"name":"obj_focus","order":6,"path":"objects/obj_focus/obj_focus.yy",},
     {"name":"spr_flock_test","order":1,"path":"sprites/spr_flock_test/spr_flock_test.yy",},
   ],
 }
