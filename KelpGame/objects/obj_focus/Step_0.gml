@@ -9,21 +9,26 @@ if _val = 1 {
 	}
 } else {
 	_target = round(lerp(0, array_length(layers), _val));
+	//show_debug_message(string(_target))
 	
 	for(var i = 0; i < array_length(downsamples); i += 1) {
-		downsamples[i] = clamp(abs(i - _target), 0, 80);
+		downsamples[i] = lerp(0, 15, abs(_target - i) / array_length(downsamples));
 	}
+	
 }
 
 for(var i = 0; i < array_length(downsamples); i += 1) {
-		//if downsamples[i] = 0 {
-		//	layer_enable_fx(layer[i], false);	
-		//} else {
-		//	layer_enable_fx(layer[i], true);
-		//	fx_set_parameter(fx_structs[i], "g_Radius", downsamples[i]);
-		//}
-		fx_set_parameter(fx_structs[i], "g_RecursiveBlurRadius", downsamples[i]);
+	//show_debug_message(string(fx_get_single_layer(fx_structs[i])))
+		if downsamples[i] = 0 {
+			layer_enable_fx(layers[i], false);
+			//show_debug_message(string(layers[i]) + " " + string(layer_fx_is_enabled(layers[i])));
+		} else {
+			layer_enable_fx(layers[i], true);
+			
+			fx_set_parameter(fx_structs[i], "g_RecursiveBlurRadius", downsamples[i]);
+		}
+		//fx_set_parameter(fx_structs[i], "g_numDownsamples", downsamples[i]);
 	}
 	
 	
-show_debug_message(string(downsamples));
+//show_debug_message(string(downsamples));
