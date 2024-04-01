@@ -29,5 +29,5 @@ if selected {
 	//event_user(0);
 }
 
-x = (916 + 82 + 82) * _scale + _window_x;
+x = (x_pos) * _scale + _window_x;
 y = (82 + radius) * _scale + _window_y;

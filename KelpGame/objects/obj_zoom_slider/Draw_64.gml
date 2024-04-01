@@ -4,7 +4,7 @@ var _w_scale = obj_window_scaler.w_ratio;
 var _h_scale = obj_window_scaler.h_ratio;
 
 
-var _x = (916 + 82 + 82) * _w_scale;
+var _x = (x_pos) * _w_scale;
 var _y = 82;
 
 

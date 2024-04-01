@@ -137,7 +137,7 @@
 		
 		if destroy = 1 {
 			show_debug_message("bye! " + string(instance_number(object_index)));
-			instance_create_layer(20 + random(room_width - 40), choose(20, room_height - 20), layer_get_name(layer), object_index);
+			instance_create_layer(20 + random(room_width - 40), choose(0, room_height), layer_get_name(layer), object_index);
 			instance_destroy();	
 		}
 		// I'm off the screen 

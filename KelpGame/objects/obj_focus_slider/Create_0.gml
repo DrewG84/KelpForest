@@ -9,7 +9,9 @@ selected = false;
 radius = 40;
 slider_height = 916 - (2 * radius);
 
-x = 916 + 82 + 82;
+
+x_pos = FOCUS_X
+x = x_pos;
 y = 82 + radius;
 
 gui_pos = lerp((82 + radius) * obj_window_scaler.h_ratio, (82 + 916 - radius) * obj_window_scaler.h_ratio, 1);
