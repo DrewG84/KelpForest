@@ -7,3 +7,8 @@ height = base_height;
 
 w_ratio = base_width / width;
 h_ratio = base_height / height;
+
+repeat(50)
+{
+	instance_create_depth(irandom(room_width),irandom(room_height),0,obj_flock_parent)
+}
