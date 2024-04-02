@@ -8,25 +8,29 @@ switch layer_get_name(layer) {
 		kelp_sep = 500;
 		sway_time = 0;
 		sway_amount = 5;
+		_depth = 0;
 	break;
 	case "fish1":
 		kelp_sep = 400;
 		sway_time = 200;
 		sway_amount = 4;
+		_depth = 0.25;
 	break;
 	case "fish2":
-		kelp_sep = 300;
+		kelp_sep = 150;
 		sway_time = 400;
 		sway_amount = 3;
+		_depth = 0.5;
 	break;
 	case "fish3":
-		kelp_sep = 200;
+		kelp_sep = 100;
 		sway_time = 600;
 		sway_amount = 2;
+		_depth = 0.75;
 	break;
 }
 
-kelp_width = 80;
+kelp_width = 100;
 
 
 
@@ -44,7 +48,8 @@ format = vertex_format_end();
 vbuff = vertex_create_buffer();
 vertex_begin(vbuff, format);
 
-for (var i = irandom(kelp_sep); i < width; i += irandom_range(kelp_sep / 2, kelp_sep)) {
-	kelp_script(vbuff, x + i, y + height - 10, kelp_width, height, 40);
+for (var i = irandom_range(0 - kelp_sep / 2, 0); i < width; i += irandom_range(kelp_sep / 2, kelp_sep)) {
+	var height_var = irandom_range(0, 30);
+	kelp_script(vbuff, x + i, y + height + height_var, kelp_width, height + 10 + height_var, 40, _depth);
 }
 vertex_end(vbuff);

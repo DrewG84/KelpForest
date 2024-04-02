@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function kelp_script(vbuff, xx, yy, width, height, segments){
+function kelp_script(vbuff, xx, yy, width, height, segments, _depth){
 	//var vbuff = argument0;
 	//var xx = argument1;
 	//var yy = argument2;
@@ -10,6 +10,15 @@ function kelp_script(vbuff, xx, yy, width, height, segments){
 	
 	var seg_height = height / segments;
 	
+	var _green = c_olive;
+	
+	var _dark = c_black;
+	
+	var white_mix = merge_color(c_white, _dark, _depth / 2);
+	
+	var green_mix = merge_color(_green, _dark, _depth);
+	
+	var green_dark_mix = merge_color(white_mix, green_mix, random_range(0.75, 1));
 	
 	
 	
@@ -23,7 +32,7 @@ function kelp_script(vbuff, xx, yy, width, height, segments){
 		var x4 = x3 + width;
 		var y4 = y3;
 		
-		var color = merge_color(c_white, c_green, i / segments)
+		var color = merge_color(green_dark_mix, white_mix, i / segments)
 		// #F0980E
 		
 		var _base_weight =  lerp(0, 1, i / segments);

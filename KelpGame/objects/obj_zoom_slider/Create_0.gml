@@ -13,5 +13,5 @@ x_pos = ZOOM_X;
 x = x_pos;
 y = 82 + radius;
 
-gui_pos = lerp((82 + radius) * obj_window_scaler.h_ratio, (82 + 916 - radius) * obj_window_scaler.h_ratio, 1);
+gui_pos = lerp((82 + radius) * obj_window_scaler.h_ratio, (82 + 916 - radius) * obj_window_scaler.h_ratio, val);
 gui_temp = ((gui_pos - (82 * obj_window_scaler.h_ratio))) / (916 * obj_window_scaler.h_ratio);
