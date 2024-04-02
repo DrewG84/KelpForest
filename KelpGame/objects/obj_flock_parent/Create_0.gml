@@ -1,8 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-speed_min = 1.5
-speed_max = 2
+speed_min = 1
+speed_max = 1.5
 
 speed = random_range(speed_min,speed_max)
 direction = irandom(359)

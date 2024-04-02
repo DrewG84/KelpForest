@@ -158,19 +158,19 @@
 
 if direction > 90 && direction < 270 {
 	if angle_difference(direction, 180) > 15 {
-		change_direction(180, 0.5 * angle_change_speed);
+		change_direction(180, 0.7 * angle_change_speed);
 	}
 }
 
 if (direction >= 0 && direction <= 90) {
 	if angle_difference(direction, 0) > 15 {
-		change_direction(0, 0.5 * angle_change_speed);
+		change_direction(0, 0.7 * angle_change_speed);
 	}
 }
 
 if (direction >= 270) {
 	if angle_difference(direction, 360) > 15 {
-		change_direction(360, 0.5 * angle_change_speed);
+		change_direction(360, 0.7 * angle_change_speed);
 	}
 }
 

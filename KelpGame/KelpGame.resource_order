@@ -18,14 +18,16 @@
     {"name":"Timelines","order":7,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"obj_album","order":8,"path":"objects/obj_album/obj_album.yy",},
     {"name":"obj_capture","order":7,"path":"objects/obj_capture/obj_capture.yy",},
     {"name":"obj_focus_slider","order":1,"path":"objects/obj_focus_slider/obj_focus_slider.yy",},
     {"name":"obj_focus","order":6,"path":"objects/obj_focus/obj_focus.yy",},
     {"name":"obj_frame_drawer","order":1,"path":"objects/obj_frame_drawer/obj_frame_drawer.yy",},
     {"name":"obj_kelp","order":5,"path":"objects/obj_kelp/obj_kelp.yy",},
     {"name":"obj_pan_zoom","order":2,"path":"objects/obj_pan_zoom/obj_pan_zoom.yy",},
-    {"name":"obj_album","order":8,"path":"objects/obj_album/obj_album.yy",},
+    {"name":"kelp_script","order":2,"path":"scripts/kelp_script/kelp_script.yy",},
     {"name":"position_macros","order":1,"path":"scripts/position_macros/position_macros.yy",},
     {"name":"spr_flock_test","order":1,"path":"sprites/spr_flock_test/spr_flock_test.yy",},
+    {"name":"spr_kelp_temp","order":2,"path":"sprites/spr_kelp_temp/spr_kelp_temp.yy",},
   ],
 }
