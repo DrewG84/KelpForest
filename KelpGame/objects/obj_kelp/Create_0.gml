@@ -5,13 +5,13 @@ height = room_height + 20;
 
 switch layer_get_name(layer) {
 	case "foreground":
-		kelp_sep = 500;
+		kelp_sep = 300;
 		sway_time = 0;
-		sway_amount = 5;
+		sway_amount = 4;
 		_depth = 0;
 	break;
 	case "fish1":
-		kelp_sep = 400;
+		kelp_sep = 250;
 		sway_time = 200;
 		sway_amount = 4;
 		_depth = 0.25;
@@ -23,7 +23,7 @@ switch layer_get_name(layer) {
 		_depth = 0.5;
 	break;
 	case "fish3":
-		kelp_sep = 100;
+		kelp_sep = 80;
 		sway_time = 600;
 		sway_amount = 2;
 		_depth = 0.75;
@@ -49,7 +49,7 @@ vbuff = vertex_create_buffer();
 vertex_begin(vbuff, format);
 
 for (var i = irandom_range(0 - kelp_sep / 2, 0); i < width; i += irandom_range(kelp_sep / 2, kelp_sep)) {
-	var height_var = irandom_range(0, 30);
+	var height_var = irandom_range(0, 100);
 	kelp_script(vbuff, x + i, y + height + height_var, kelp_width, height + 10 + height_var, 40, _depth);
 }
 vertex_end(vbuff);

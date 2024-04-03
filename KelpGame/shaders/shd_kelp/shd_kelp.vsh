@@ -16,7 +16,11 @@ void main()
 {
 	vec4 trans_pos = vec4(in_Position.xyz, 1.0);
 	
-	trans_pos.x += smoothstep(0., 1., in_Weight*0.5) * 20. * u_amount;
+	float offset = 40.0 * (sin(100.0 + u_amount * 0.5)) * in_Weight;
+
+	trans_pos.x += offset;
+
+	//trans_pos.x += smoothstep(0., 1., in_Weight*0.5) * 20. * u_amount;
 	
     //vec4 object_space_pos = vec4( in_Position.x, in_Position.y, in_Position.z, 1.0);
     //gl_Position = gm_Matrices[MATRIX_WORLD_VIEW_PROJECTION] * object_space_pos;

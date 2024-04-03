@@ -12,7 +12,7 @@ if _val = 1 {
 	//show_debug_message(string(_target))
 	
 	for(var i = 0; i < array_length(downsamples); i += 1) {
-		downsamples[i] = lerp(0, 15, abs(_target - i) / array_length(downsamples));
+		downsamples[i] = lerp(0, 15, abs(_target - i) / array_length(layers));
 	}
 	
 }

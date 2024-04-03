@@ -18,7 +18,7 @@ function kelp_script(vbuff, xx, yy, width, height, segments, _depth){
 	
 	var green_mix = merge_color(_green, _dark, _depth);
 	
-	var green_dark_mix = merge_color(white_mix, green_mix, random_range(0.75, 1));
+	var green_dark_mix = merge_color(green_mix, _dark, random_range(0.4, 0.7));
 	
 	
 	
