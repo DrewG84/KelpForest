@@ -9,20 +9,25 @@ switch layer_get_name(layer) {
 		alpha = 0.2;
 		sway_time = 0;
 		sway_amount = 4;
+		beam_width = 150;
 	break;
 	case "beam2":
 		sep = 1500;
 		alpha = 0.3;
 		sway_time = 800;
 		sway_amount = 4;
+		beam_width = 100;
 	break;
 	case "beam3":
 		sep = 2000;
 		alpha = 0.3;
 		sway_time = 1500;
 		sway_amount = 3;
+		beam_width = 80;
 	break;
 }
+
+u_amount = shader_get_uniform(shd_kelp, "u_amount");
 
 vertex_format_begin();
 vertex_format_add_position();
@@ -36,13 +41,13 @@ for (var i = irandom_range(0 - sep / 2, 0); i < width + 800; i += irandom_range(
 	
 		
 		show_debug_message("light")
-		var x1 = i - 75;
+		var x1 = i - (beam_width / 2);
 		var y1 = -20;
-		var x2 = x1 + 150;
+		var x2 = x1 + beam_width;
 		var y2 = y1;
 		var x3 = x1 - 300;
 		var y3 = y1 + 1200;
-		var x4 = x3 + 150;
+		var x4 = x3 + beam_width;
 		var y4 = y3;
 		
 		var color = c_white;

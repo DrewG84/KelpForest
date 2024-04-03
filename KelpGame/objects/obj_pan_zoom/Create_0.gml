@@ -5,7 +5,7 @@ global.draggable = true;
 camera = view_camera[0];
 
 view_x = room_width / 2;
-view_y = room_height / 2;
+view_y = 0;
 
 scale = 1;
 
