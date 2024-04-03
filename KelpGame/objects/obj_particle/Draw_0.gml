@@ -3,7 +3,7 @@
 
 var _scale = obj_pan_zoom.scale;
 
-draw_set_color(c_white);
+draw_set_color(WHITE);
 draw_set_alpha(0.6);
 
 draw_circle(x, y, size * _scale, false);

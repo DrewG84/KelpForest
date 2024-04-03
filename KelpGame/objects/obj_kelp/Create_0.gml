@@ -7,25 +7,25 @@ switch layer_get_name(layer) {
 	case "foreground":
 		kelp_sep = 300;
 		sway_time = 0;
-		sway_amount = 4;
+		sway_amount = 2;
 		_depth = 0;
 	break;
 	case "fish1":
 		kelp_sep = 250;
 		sway_time = 200;
-		sway_amount = 4;
+		sway_amount = 2;
 		_depth = 0.25;
 	break;
 	case "fish2":
 		kelp_sep = 150;
 		sway_time = 400;
-		sway_amount = 3;
+		sway_amount = 1;
 		_depth = 0.5;
 	break;
 	case "fish3":
 		kelp_sep = 80;
 		sway_time = 600;
-		sway_amount = 2;
+		sway_amount = 1;
 		_depth = 0.75;
 	break;
 }

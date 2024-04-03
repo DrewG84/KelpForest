@@ -16,7 +16,7 @@ void main()
 {
 	vec4 trans_pos = vec4(in_Position.xyz, 1.0);
 	
-	float offset = 40.0 * (sin(100.0 + u_amount * 0.5)) * in_Weight;
+	float offset = 40.0 * (sin((10.0 * in_Weight + u_amount) * 0.5)) * in_Weight;
 
 	trans_pos.x += offset;
 

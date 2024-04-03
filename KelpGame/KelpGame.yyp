@@ -52,7 +52,7 @@
     {"id":{"name":"obj_zoom_slider","path":"objects/obj_zoom_slider/obj_zoom_slider.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"kelp_script","path":"scripts/kelp_script/kelp_script.yy",},},
-    {"id":{"name":"position_macros","path":"scripts/position_macros/position_macros.yy",},},
+    {"id":{"name":"macros","path":"scripts/macros/macros.yy",},},
     {"id":{"name":"scale_canvas","path":"scripts/scale_canvas/scale_canvas.yy",},},
     {"id":{"name":"shd_kelp","path":"shaders/shd_kelp/shd_kelp.yy",},},
     {"id":{"name":"shd_light_beams","path":"shaders/shd_light_beams/shd_light_beams.yy",},},

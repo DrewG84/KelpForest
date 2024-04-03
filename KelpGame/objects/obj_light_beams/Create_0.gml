@@ -50,7 +50,7 @@ for (var i = irandom_range(0 - sep / 2, 0); i < width + 800; i += irandom_range(
 		var x4 = x3 + beam_width;
 		var y4 = y3;
 		
-		var color = c_white;
+		var color = WHITE;
 		
 		//tri 1
 		vertex_position(vbuff, x1, y1);

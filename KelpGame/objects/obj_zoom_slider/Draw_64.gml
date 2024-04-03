@@ -9,7 +9,7 @@ var _y = 82;
 
 
 //draw slider range
-draw_set_color(c_white);
+draw_set_color(WHITE);
 draw_roundrect_ext(_x - (10 * _w_scale), _y * _h_scale, _x + (10 * _w_scale), (_y + 916) * _h_scale, 20 * _w_scale, 20 * _w_scale, false);
 
 //get slider pos
@@ -21,11 +21,11 @@ if selected = true {
 }
 
 //slider fill
-draw_set_color(c_green);
+draw_set_color(ACCENT);
 draw_roundrect_ext(_x - (10 * _w_scale), gui_pos, _x + (10 * _w_scale), (_y + 916) * _h_scale, 20 * _w_scale, 20 * _w_scale, false);
 
 //draw slider button
-draw_set_color(c_green);
+draw_set_color(ACCENT);
 draw_circle(_x, gui_pos, radius * _w_scale, false);
 
 

@@ -29,7 +29,7 @@
     {"name":"obj_particle_gen","order":9,"path":"objects/obj_particle_gen/obj_particle_gen.yy",},
     {"name":"obj_particle","order":10,"path":"objects/obj_particle/obj_particle.yy",},
     {"name":"kelp_script","order":2,"path":"scripts/kelp_script/kelp_script.yy",},
-    {"name":"position_macros","order":1,"path":"scripts/position_macros/position_macros.yy",},
+    {"name":"macros","order":1,"path":"scripts/macros/macros.yy",},
     {"name":"shd_light_beams","order":1,"path":"shaders/shd_light_beams/shd_light_beams.yy",},
     {"name":"spr_flock_test","order":1,"path":"sprites/spr_flock_test/spr_flock_test.yy",},
     {"name":"spr_kelp_temp","order":2,"path":"sprites/spr_kelp_temp/spr_kelp_temp.yy",},

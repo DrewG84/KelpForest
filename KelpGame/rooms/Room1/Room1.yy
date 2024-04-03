@@ -27,13 +27,13 @@
   "layers":[
     {"$GMREffectLayer":"","%Name":"water","depth":0,"effectEnabled":true,"effectType":"_filter_underwater","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"water","properties":[
         {"name":"g_Distort1Speed","type":0,"value":"0.01",},
-        {"name":"g_Distort2Speed","type":0,"value":"0.025",},
+        {"name":"g_Distort2Speed","type":0,"value":"0.019",},
         {"name":"g_Distort1Scale","type":0,"value":"50",},
         {"name":"g_Distort1Scale","type":0,"value":"30",},
         {"name":"g_Distort2Scale","type":0,"value":"100",},
         {"name":"g_Distort2Scale","type":0,"value":"10",},
-        {"name":"g_Distort1Amount","type":0,"value":"8",},
-        {"name":"g_Distort2Amount","type":0,"value":"2",},
+        {"name":"g_Distort1Amount","type":0,"value":"4",},
+        {"name":"g_Distort2Amount","type":0,"value":"1",},
         {"name":"g_ChromaSpreadAmount","type":0,"value":"1.25",},
         {"name":"g_CamOffsetScale","type":0,"value":"1",},
         {"name":"g_GlintCol","type":1,"value":"#FF000000",},
@@ -84,7 +84,7 @@
         {"name":"g_RecursiveBlurQuality","type":0,"value":"2",},
         {"name":"g_RecursiveBlurGamma","type":0,"value":"0",},
       ],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
-    {"$GMRBackgroundLayer":"","%Name":"blue3","animationFPS":15.0,"animationSpeedType":0,"colour":518979475,"depth":1000,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"blue3","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
+    {"$GMRBackgroundLayer":"","%Name":"blue3","animationFPS":15.0,"animationSpeedType":0,"colour":602865555,"depth":1000,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"blue3","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"fish3","depth":1100,"effectEnabled":true,"effectType":"none","gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"","%Name":"inst_4FE06225","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4FE06225","objectId":{"name":"obj_kelp","path":"objects/obj_kelp/obj_kelp.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":112.0,"y":0.0,},
       ],"layers":[],"name":"fish3","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
