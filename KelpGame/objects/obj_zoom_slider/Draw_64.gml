@@ -10,7 +10,8 @@ var _y = 82;
 
 //draw slider range
 draw_set_color(WHITE);
-draw_roundrect_ext(_x - (10 * _w_scale), _y * _h_scale, _x + (10 * _w_scale), (_y + 916) * _h_scale, 20 * _w_scale, 20 * _w_scale, false);
+draw_roundrect_ext(_x - (25 * _w_scale), _y * _h_scale, _x + (32 * _w_scale), (_y + 916) * _h_scale, 22 * _w_scale, 22 * _w_scale, false);
+draw_roundrect_ext(_x - (32 * _w_scale), _y * _h_scale, _x + (10 * _w_scale), (_y + 916) * _h_scale, 50 * _w_scale, 50 * _w_scale, false);
 
 //get slider pos
 if selected = true {
@@ -22,11 +23,15 @@ if selected = true {
 
 //slider fill
 draw_set_color(ACCENT);
-draw_roundrect_ext(_x - (10 * _w_scale), gui_pos, _x + (10 * _w_scale), (_y + 916) * _h_scale, 20 * _w_scale, 20 * _w_scale, false);
+draw_roundrect_ext(_x - (25 * _w_scale), gui_pos, _x + (32 * _w_scale), (_y + 916) * _h_scale, 22 * _w_scale, 22 * _w_scale, false);
+draw_roundrect_ext(_x - (32 * _w_scale), gui_pos, _x + (10 * _w_scale), (_y + 916) * _h_scale, 50 * _w_scale, 50 * _w_scale, false);
 
 //draw slider button
 draw_set_color(ACCENT);
-draw_circle(_x, gui_pos, radius * _w_scale, false);
+
+draw_roundrect_ext(_x - (78 * _w_scale), gui_pos, _x + (32 * _w_scale), gui_pos + (45 * _w_scale), 20 * _w_scale, 20 * _w_scale, false);
+draw_roundrect_ext(_x - (32 * _w_scale), gui_pos - (45 * _w_scale), _x + (32 * _w_scale), gui_pos + (40 * _w_scale), 20 * _w_scale, 20 * _w_scale, false);
+draw_roundrect_ext(_x - (78 * _w_scale), gui_pos - (45 * _w_scale), _x + (32 * _w_scale), gui_pos + (40 * _w_scale), 50 * _w_scale, 50 * _w_scale, false);
 
 
 //draw_text(window_mouse_get_x(), window_mouse_get_y(), string(gui_pos));

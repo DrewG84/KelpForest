@@ -5,7 +5,7 @@ var _w_scale = obj_window_scaler.w_ratio;
 var _h_scale = obj_window_scaler.h_ratio;
 
 
-scale = lerp(0.5, 1, obj_zoom_slider.val);
+scale = lerp(0.3, 0.6, obj_zoom_slider.val);
 
 if point_in_rectangle(window_mouse_get_x() - window_get_x(), window_mouse_get_y() - window_get_y(), WINDOW_X * _w_scale, 82 * _h_scale, (916 + WINDOW_X) * _w_scale,  (916 + 82) * _h_scale) && global.draggable = true {
 

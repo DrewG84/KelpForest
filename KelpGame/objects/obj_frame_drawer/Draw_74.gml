@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+var _scale = lerp(90, 0, obj_zoom_slider.val);
+
 var _w_scale = obj_window_scaler.w_ratio;
 var _h_scale = obj_window_scaler.h_ratio;
 
@@ -24,7 +26,7 @@ var _surf2 = surface_create(1920 * _w_scale, 1080 * _h_scale);
 
 surface_set_target(_surf2);
 
-draw_clear_alpha(WHITE, 0.2);
+draw_clear_alpha(WHITE, 0.3);
 
 gpu_set_blendmode(bm_subtract);
 draw_set_color(c_black);
@@ -41,4 +43,7 @@ draw_surface(_surf,0, 0);
 
 surface_free(_surf);
 surface_free(_surf2);
+
+draw_sprite_ext(spr_reticle, 0, (WINDOW_X + (916 / 2)) * _w_scale, (82 + (916 / 2)) * _h_scale, _w_scale, _h_scale, _scale, c_white, 0.3);
+draw_sprite_ext(spr_reticle, 1, (WINDOW_X + (916 / 2)) * _w_scale, (82 + (916 / 2)) * _h_scale, _w_scale, _h_scale, 0, c_white, 0.3);
 

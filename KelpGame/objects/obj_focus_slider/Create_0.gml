@@ -6,7 +6,7 @@ max_value = 1;
 selected = false;
 
 
-radius = 40;
+radius = 45;
 slider_height = 916 - (2 * radius);
 
 
