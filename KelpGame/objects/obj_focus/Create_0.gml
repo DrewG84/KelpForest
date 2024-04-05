@@ -18,3 +18,5 @@ for(var i = 0; i < array_length(layers); i += 1) {
 	
 	downsamples[i] = 0;
 }
+
+focus_dist = 0;

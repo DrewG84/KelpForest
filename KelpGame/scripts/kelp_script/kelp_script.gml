@@ -14,7 +14,7 @@ function kelp_script(vbuff, xx, yy, width, height, segments, _depth){
 	
 	var _dark = c_black;
 	
-	var white_mix = merge_color(c_white, _dark, _depth / 2);
+	var white_mix = merge_color(c_yellow, _dark, _depth / 2);
 	
 	var green_mix = merge_color(_green, _dark, _depth);
 	
@@ -38,11 +38,24 @@ function kelp_script(vbuff, xx, yy, width, height, segments, _depth){
 		var _base_weight =  lerp(0, 1, i / segments);
 		var _top_weight = lerp(0, 1, (i + 1) / segments);
 		
-		var uvs = sprite_get_uvs(spr_kelp_temp, 0);
-		var left = uvs[0];
-		var top = uvs[1];
-		var right = uvs[2];
-		var bottom = uvs[3];
+		var uvs = sprite_get_uvs(spr_kelp, irandom_range(0, 6));
+		
+		var left = -1;
+		var top = -1;
+		var right = -1;
+		var bottom = -1;
+		
+		if choose(0,1) = 0 {
+		 left = uvs[0];
+		 top = uvs[1];
+		 right = uvs[2];
+		 bottom = uvs[3];
+		} else {
+		 left = uvs[0];
+		 top = uvs[3];
+		 right = uvs[2];
+		 bottom = uvs[1];
+		}
 		
 		//vertices
 		

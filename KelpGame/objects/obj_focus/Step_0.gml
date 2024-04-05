@@ -21,6 +21,11 @@ for(var i = 0; i < array_length(downsamples); i += 1) {
 	//show_debug_message(string(fx_get_single_layer(fx_structs[i])))
 		if downsamples[i] = 0 {
 			layer_enable_fx(layers[i], false);
+			if _val != 1 {
+				focus_dist = i + 1;
+			} else {
+				focus_dist = 0;
+			}
 			//show_debug_message(string(layers[i]) + " " + string(layer_fx_is_enabled(layers[i])));
 		} else {
 			layer_enable_fx(layers[i], true);

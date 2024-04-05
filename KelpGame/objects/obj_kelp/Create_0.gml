@@ -11,19 +11,19 @@ switch layer_get_name(layer) {
 		_depth = 0;
 	break;
 	case "fish1":
-		kelp_sep = 250;
+		kelp_sep = 200;
 		sway_time = 200;
 		sway_amount = 2;
 		_depth = 0.25;
 	break;
 	case "fish2":
-		kelp_sep = 150;
+		kelp_sep = 100;
 		sway_time = 400;
 		sway_amount = 1;
 		_depth = 0.5;
 	break;
 	case "fish3":
-		kelp_sep = 80;
+		kelp_sep = 50;
 		sway_time = 600;
 		sway_amount = 1;
 		_depth = 0.75;
@@ -36,7 +36,7 @@ kelp_width = 100;
 
 u_amount = shader_get_uniform(shd_kelp, "u_amount");
 
-texture = sprite_get_texture(spr_kelp_temp, 0);
+texture = sprite_get_texture(spr_kelp, 0);
 
 vertex_format_begin();
 vertex_format_add_position();
@@ -50,6 +50,6 @@ vertex_begin(vbuff, format);
 
 for (var i = irandom_range(0 - kelp_sep / 2, 0); i < width; i += irandom_range(kelp_sep / 2, kelp_sep)) {
 	var height_var = irandom_range(0, 100);
-	kelp_script(vbuff, x + i, y + height + height_var, kelp_width, height + 10 + height_var, 40, _depth);
+	kelp_script(vbuff, x + i, y + height + height_var, kelp_width, height + 10 + height_var, 30, _depth);
 }
 vertex_end(vbuff);

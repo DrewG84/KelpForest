@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 var _scale = lerp(90, 0, obj_zoom_slider.val);
+var _focus = obj_focus.focus_dist;
 
 var _w_scale = obj_window_scaler.w_ratio;
 var _h_scale = obj_window_scaler.h_ratio;
@@ -46,4 +47,6 @@ surface_free(_surf2);
 
 draw_sprite_ext(spr_reticle, 0, (WINDOW_X + (916 / 2)) * _w_scale, (82 + (916 / 2)) * _h_scale, _w_scale, _h_scale, _scale, c_white, 0.3);
 draw_sprite_ext(spr_reticle, 1, (WINDOW_X + (916 / 2)) * _w_scale, (82 + (916 / 2)) * _h_scale, _w_scale, _h_scale, 0, c_white, 0.3);
+draw_sprite_ext(spr_reticle, 2, (WINDOW_X + (916 / 2)) * _w_scale, (82 + (916 / 2)) * _h_scale, _w_scale, _h_scale, 0, c_white, 0.3);
 
+draw_sprite_ext(spr_reticle, 3, (WINDOW_X + (50 + (290 / 6) * _focus)) * _w_scale, (82 + 110) * _h_scale, _w_scale, _h_scale, 0, c_white, 0.3);
