@@ -10,8 +10,8 @@
   "name":"obj_frame_drawer",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"drawing",
+    "path":"folders/Objects/drawing.yy",
   },
   "parentObjectId":null,
   "persistent":false,

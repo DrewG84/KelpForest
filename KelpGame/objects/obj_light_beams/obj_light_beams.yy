@@ -10,8 +10,8 @@
   "name":"obj_light_beams",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"drawing",
+    "path":"folders/Objects/drawing.yy",
   },
   "parentObjectId":null,
   "persistent":false,
