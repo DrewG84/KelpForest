@@ -10,9 +10,9 @@ event_inherited();
 //	male = false;
 //}
 
-sway_time = 0;
+sway_time = irandom(200);
 
-angle_change_speed = 0.6
+angle_change_speed = 0.2
 
 speed_min = 0.5
 speed_max = 0.75
@@ -24,6 +24,6 @@ tail_width = 185;
 scale = 3
 
 direction_array = [];
-repeat (8) {
+repeat (16) {
 	array_push(direction_array, direction);
 }
