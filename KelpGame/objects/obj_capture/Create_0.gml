@@ -7,7 +7,7 @@ photo = {
 	species_array: [],
 }
 
-layers = ["foreground", "fish1", "fish2", "fish3"];
+layers = ["fish3", "fish2", "fish1", "foreground"];
 
 
 for(var i = 0; i < array_length(layers); i += 1) {

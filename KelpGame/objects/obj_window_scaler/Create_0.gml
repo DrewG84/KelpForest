@@ -8,7 +8,3 @@ height = base_height;
 w_ratio = base_width / width;
 h_ratio = base_height / height;
 
-repeat(50)
-{
-	instance_create_layer(irandom(room_width),irandom(room_height), choose("fish1", "fish2", "fish3"), obj_flock_parent)
-}

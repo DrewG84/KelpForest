@@ -36,7 +36,7 @@ if surface_exists(temp_surf) {
 	
 	surface_reset_target();
 	
-	photo.image = sprite_create_from_surface(temp_surf, WINDOW_X * _scalar, 82 * _scalar, 916 * _scalar, 916 * _scalar, false, false, 0, 0);
+	//photo.image = sprite_create_from_surface(temp_surf, WINDOW_X * _scalar, 82 * _scalar, 916 * _scalar, 916 * _scalar, false, false, 0, 0);
 	
 	surface_free(temp_surf);
 }
