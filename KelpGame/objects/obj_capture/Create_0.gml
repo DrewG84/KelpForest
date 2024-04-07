@@ -10,7 +10,13 @@ photo = {
 
 layers = ["fish3", "fish2", "fish1", "foreground"];
 radius_array = [];
+blur_area_id = blur_area_create();
 
+
+var blue1 = #385254;
+var blue2 = #7FC4AE;
+var blue3 = #68B7AA;
+blue_array = [blue1, blue2, blue3];
 
 for(var i = 0; i < array_length(layers); i += 1) {
 	
@@ -27,9 +33,3 @@ for(var i = 0; i < array_length(layers); i += 1) {
 }
 show_debug_message(string(radius_array))
 
-var u_tex_size = shader_get_uniform(shd_blur, "texture_size");
-	shader_set_uniform_f(u_tex_size, room_width, room_height);
-	var u_kernel_size = shader_get_uniform(shd_blur, "blur_radius");
-	var u_sample_count = shader_get_uniform(shd_blur, "sample_count");
-	shader_set_uniform_f(u_kernel_size, obj_focus.downsamples[i]);
-	shader_set_uniform_f(u_sample_count, 8);

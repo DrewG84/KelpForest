@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"__ba_sh_downscale",
+  "name":"__ba_sh_downscale",
+  "parent":{
+    "name":"Shaders",
+    "path":"folders/FoxeyBlurArea/Shaders.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

@@ -30,7 +30,8 @@ void main() {
     vec2 rotated_coords = random(v_vTexcoord) * scale;
     mat2 rotation_angle = mat2(-0.7373688, -0.6754904, 0.6754904, -0.7373688);
     
-    for (float i = 0.0; i < sample_count; i += 1.0) {
+	for (float i = 0.0; i < 1.0; i += 1.0) {
+    //for (float i = 0.0; i < sample_count; i += 1.0) {
         current_radius += 1.0 / current_radius;
         rotated_coords *= rotation_angle;
         
