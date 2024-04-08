@@ -16,3 +16,8 @@ enemies_dist = 80
 y_scale = 1;
 
 destroy = 0;
+
+in_cam = false;
+
+direction_array = [];
+sway_time = irandom(200);

@@ -4,7 +4,9 @@
 // Inherit the parent event
 event_inherited();
 
-sway_time += 5;
+sway_time += 6;
+
+
 
 
 

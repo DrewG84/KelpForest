@@ -2,8 +2,11 @@
 // You can write your code in this editor
 var _window_x = camera_get_view_x(view_camera[0]);
 var _window_y = camera_get_view_y(view_camera[0]);
+
 var _scale = obj_pan_zoom.scale;
 
+var _w_scale = obj_window_scaler.w_ratio;
+var _h_scale = obj_window_scaler.h_ratio;
 
 main_surface = surface_create(room_width, room_height);
 
@@ -125,8 +128,10 @@ for(var i = 0; i < array_length(layers); i += 1) {
 
 surface_set_target(application_surface)
 draw_clear(c_black);
+draw_rectangle_color(0, 0, room_width, room_height, #0AFFB1, #0AFFB1, #001C19, #001C19, false);
+var _surface_scale = (_scale / _w_scale);
 repeat (3) {
-	draw_surface_stretched_ext(main_surface, 0 - _window_x / (_scale), 0 - _window_y / _scale, room_width / _scale, room_height / _scale, c_white, 1);
+	draw_surface_stretched_ext(main_surface, 0 - _window_x / _surface_scale, 0 - _window_y / _surface_scale, room_width / _surface_scale, room_height / _surface_scale, c_white, 1);
 }
 surface_reset_target()
 

@@ -4,9 +4,6 @@ var _w_scale = obj_window_scaler.w_ratio;
 var _h_scale = obj_window_scaler.h_ratio;
 
 
-////////////
-
-
 var _surf = surface_create(1920 * _w_scale, 1080 * _h_scale);
 
 surface_set_target(_surf);

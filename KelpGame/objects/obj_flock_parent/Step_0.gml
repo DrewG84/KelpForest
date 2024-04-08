@@ -4,10 +4,10 @@
 
 #region - debug controls - 
 
-	if (keyboard_check_pressed(vk_up)) {friends_dist+=10}
-	if (keyboard_check_pressed(vk_down)) {friends_dist-=10}
-	if (keyboard_check_pressed(vk_left)) {enemies_dist+=10}
-	if (keyboard_check_pressed(vk_right)) {enemies_dist-=10}
+	//if (keyboard_check_pressed(vk_up)) {friends_dist+=10}
+	//if (keyboard_check_pressed(vk_down)) {friends_dist-=10}
+	//if (keyboard_check_pressed(vk_left)) {enemies_dist+=10}
+	//if (keyboard_check_pressed(vk_right)) {enemies_dist-=10}
 
 	//show_debug_message(friends_dist)
 
@@ -179,4 +179,29 @@ if image_angle > 180 || image_angle < 0 {
 	y_scale = 1;	
 } else {
 	y_scale = -1;
+}
+
+array_push(direction_array, direction);
+var pop = array_shift(direction_array);
+
+var _window_x = camera_get_view_x(view_camera[0]);
+var _window_y = camera_get_view_y(view_camera[0]);
+
+var _scale = obj_pan_zoom.scale;
+
+
+
+var left = _window_x + (WINDOW_X) * _scale;
+var top = _window_y + (82 * _scale);
+var right = _window_x + (WINDOW_X + 916) * _scale;
+var bottom = _window_y + (82 + 916) * _scale;
+
+if point_in_rectangle(x, y, left, top, right, bottom)
+&& layer_fx_is_enabled(layer) = false {
+
+	in_cam = true;
+	
+} else {
+	
+	in_cam = false;	
 }

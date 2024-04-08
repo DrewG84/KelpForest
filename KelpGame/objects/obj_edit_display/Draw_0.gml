@@ -11,4 +11,13 @@ if global.album[_array_pos] != -1 {
 	draw_sprite_stretched(global.album[_array_pos].image, 0, 82 + 40, 82 + 40, 916 - 80, 916 - 80);
 }
 
+for (var i = 0; i < array_length(global.album[_array_pos].species_array); i++) {
+	
+	var _scale = global.album[_array_pos].scale
+	var _struct = global.album[_array_pos].species_array[i]
+	
+	draw_text((_struct.x_pos / _scale) + 82, (_struct.y_pos / _scale) + 82, string(_struct.name));
+	
+}
+
 //draw_text(100, 100, string(global.album))
