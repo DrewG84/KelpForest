@@ -14,6 +14,7 @@ if hover = true {
 
 var button_top = min(button_y - 80, 82);
 var button_bottom = max(1082 - 82, button_y + 80);
+var rotate = EaseInBack(hover_step, 0, 20, 1);
 
 draw_roundrect_ext((1920 - 82 - 200) * _w_scale, button_top * _h_scale, (1920 - 82) * _w_scale, (button_bottom) * _h_scale, 200 * _w_scale, 200 * _h_scale, false);
 
@@ -23,6 +24,11 @@ draw_roundrect_ext((1920 - 82 - 200 + 10) * _w_scale, (button_top + 10) * _h_sca
 draw_set_color(WHITE);
 draw_roundrect_ext((1920 - 82 - 200 + 20) * _w_scale, (button_top + 20) * _h_scale, (1920 - 82 - 20) * _w_scale, (button_bottom - 20) * _h_scale, 180 * _w_scale, 180 * _h_scale, false);
 
-draw_set_color(c_red);
-draw_circle((1920 - 82 - 100) * _w_scale, button_y * _h_scale, 80 * _h_scale , false);
+text.draw((1920 - 82 - 100 - 5) * _w_scale, (1080 / 2) * _h_scale);
+
+//draw_set_color(c_red);
+draw_circle((1920 - 82 - 100) * _w_scale, button_y * _h_scale, 60 * _h_scale , false);
+draw_roundrect_ext((1920 - 82 - 200 + 20) * _w_scale, (button_top + 120) * _h_scale, (1920 - 82 - 20) * _w_scale, button_y * _h_scale, 180 * _w_scale, 180 * _h_scale, false);
+draw_sprite_ext(spr_camera_icon, 0, (1920 - 82 - 100) * _w_scale, button_y * _h_scale, 1 * _w_scale, 1 * _h_scale, rotate, c_white, 1);
+
 

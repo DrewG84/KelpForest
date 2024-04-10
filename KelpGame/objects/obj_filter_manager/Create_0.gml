@@ -2,11 +2,11 @@
 // You can write your code in this editor
 
 brightness_contrast_fx = layer_get_fx("brightness_contrast");
-exposure = 1.1;
+exposure = 1.05;
 sld_exposure_struct = {
 	value: 1.1,
 	min_val: 0,
-	mid_val: 1.1,
+	mid_val: 1.05,
 	max_val: 2
 }
 

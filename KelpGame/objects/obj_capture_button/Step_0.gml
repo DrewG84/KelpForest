@@ -21,4 +21,5 @@ hover_step = clamp(hover_step, 0, 1);
 
 button_y = EaseInBack(lerp(1, 0, hover_step), 182, 720, 1);
 
-//898
+text.scale(obj_window_scaler.w_ratio);
+scribble_anim_wave(5 * obj_window_scaler.w_ratio, 100, 0.1)
