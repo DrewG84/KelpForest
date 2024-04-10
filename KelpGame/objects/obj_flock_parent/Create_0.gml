@@ -21,3 +21,8 @@ in_cam = false;
 
 direction_array = [];
 sway_time = irandom(200);
+
+left_pad = 0;
+top_pad = 0;
+right_pad = 0;
+bottom_pad = 0;

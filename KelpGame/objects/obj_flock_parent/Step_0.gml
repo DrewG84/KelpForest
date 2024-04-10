@@ -132,7 +132,7 @@
 
 #region -- Stay on screen -- 
 
-	if (!point_in_rectangle(x,y,0,0,room_width,room_height)) 
+	if (!point_in_rectangle(x,y,0 + left_pad,0 + top_pad,room_width - right_pad,room_height - bottom_pad)) 
 	{
 		
 		if destroy = 1 {
@@ -141,7 +141,7 @@
 			instance_destroy();	
 		}
 		// I'm off the screen 
-		var _goto_dir = point_direction(x,y,room_width/2,room_height/2)
+		var _goto_dir = point_direction(x,y,room_width/2,(room_height + top_pad - bottom_pad)/2)
 		if (angle_difference(direction,_goto_dir) > 0)
 		{
 			direction -= angle_change_speed

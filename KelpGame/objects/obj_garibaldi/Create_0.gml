@@ -7,7 +7,7 @@ event_inherited();
 sprite = spr_garibaldi;
 name = "Garibaldi";
 tail_width = 185;
-scale = 5
+scale = 4
 
 
 
@@ -24,3 +24,8 @@ speed = random_range(speed_min,speed_max)
 repeat (24) {
 	array_push(direction_array, direction);
 }
+
+left_pad = 0;
+top_pad = 500;
+right_pad = 0;
+bottom_pad = 0;

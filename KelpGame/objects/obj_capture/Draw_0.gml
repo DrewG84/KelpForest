@@ -133,6 +133,8 @@ var _surface_scale = (_scale / _w_scale);
 repeat (3) {
 	draw_surface_stretched_ext(main_surface, 0 - _window_x / _surface_scale, 0 - _window_y / _surface_scale, room_width / _surface_scale, room_height / _surface_scale, c_white, 1);
 }
-surface_reset_target()
+surface_reset_target();
+
+show_debug_message(string(instance_number(obj_particle)))
 
 

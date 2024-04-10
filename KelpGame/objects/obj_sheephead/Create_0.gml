@@ -8,12 +8,12 @@ if irandom_range(0, 5) = 0 {
 	sprite = spr_sheephead_male;
 	name = "California Sheephead (Male)";
 	tail_width = 185;
-	scale = 3
+	scale = 2.5
 } else {
 	sprite = spr_sheephead_female;
 	name = "California Sheephead (Female)";
 	tail_width = 185;
-	scale = 4
+	scale = 3
 }
 
 
