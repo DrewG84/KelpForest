@@ -27,7 +27,7 @@ var _surf2 = surface_create(1920 * _w_scale, 1080 * _h_scale);
 
 surface_set_target(_surf2);
 
-draw_clear_alpha(WHITE, 00);
+draw_clear_alpha(WHITE, 0.3);
 
 gpu_set_blendmode(bm_subtract);
 draw_set_color(c_black);

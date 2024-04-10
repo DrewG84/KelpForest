@@ -10,6 +10,8 @@
 #macro FOCUS_X 502 + 916 + 82
 //default 916 + 82 + 82 + 82
 
+#macro FX_X 82 + 916 + 82
+
 //color
 
 #macro BLACK #181818
