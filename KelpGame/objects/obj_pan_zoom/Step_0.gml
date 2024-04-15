@@ -22,11 +22,11 @@ if mouse_check_button(mb_left) {
 	view_y = drag_y - (mouse_y - view_y);
 	view_y = max(-80, min(view_y, (room_height - 1080 + 80)));
 } else {
-	window_set_cursor(cr_handpoint);	
+	//window_set_cursor(cr_handpoint);	
 }
 
 } else {
-	window_set_cursor(cr_default);	
+	//window_set_cursor(cr_default);	
 }
 
 var _scaled_x = (((scale * 1920) - 1920) / 2) + ((540 - WINDOW_X) * ((1 - scale) + 1));
