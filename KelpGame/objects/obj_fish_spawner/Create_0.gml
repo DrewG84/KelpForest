@@ -3,10 +3,10 @@
 
 repeat(20)
 {
-	instance_create_layer(irandom(room_width),irandom(room_height), choose("fish1", "fish2", "fish3"), obj_sheephead)
+	instance_create_layer(irandom(room_width),irandom(room_height), choose("fish1", "fish2"), obj_sheephead)
 }
 
 repeat(5)
 {
-	instance_create_layer(irandom(room_width),irandom_range(500, room_height), choose("fish1", "fish2", "fish3"), obj_garibaldi)
+	instance_create_layer(irandom(room_width),irandom_range(500, room_height), choose("fish1", "fish2"), obj_garibaldi)
 }

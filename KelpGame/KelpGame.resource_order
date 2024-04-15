@@ -55,6 +55,7 @@
     {"name":"obj_particle_gen","order":4,"path":"objects/obj_particle_gen/obj_particle_gen.yy",},
     {"name":"obj_particle","order":2,"path":"objects/obj_particle/obj_particle.yy",},
     {"name":"obj_sheephead","order":1,"path":"objects/obj_sheephead/obj_sheephead.yy",},
+    {"name":"obj_cursor","order":16,"path":"objects/obj_cursor/obj_cursor.yy",},
     {"name":"rm_edit","order":1,"path":"rooms/rm_edit/rm_edit.yy",},
     {"name":"__blur_area_functions","order":2,"path":"scripts/__blur_area_functions/__blur_area_functions.yy",},
     {"name":"__scribble_class_event","order":1,"path":"scripts/__scribble_class_event/__scribble_class_event.yy",},
@@ -166,5 +167,6 @@
     {"name":"spr_kelp","order":4,"path":"sprites/spr_kelp/spr_kelp.yy",},
     {"name":"spr_reticle","order":3,"path":"sprites/spr_reticle/spr_reticle.yy",},
     {"name":"spr_sheephead_female","order":1,"path":"sprites/spr_sheephead_female/spr_sheephead_female.yy",},
+    {"name":"spr_slider_button","order":8,"path":"sprites/spr_slider_button/spr_slider_button.yy",},
   ],
 }

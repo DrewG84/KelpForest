@@ -10,6 +10,7 @@ var button_x = x;
 var button_y = y + ((slider_height * _scale) * (val));
 
 if point_in_rectangle(mouse_x, mouse_y, button_x - (78 * _scale), button_y - (45 * _scale), button_x + (32 * _scale), button_y + (45 * _scale)) {
+	hover = true;
 if mouse_check_button_pressed(mb_left) {
 	
 		
@@ -17,6 +18,8 @@ if mouse_check_button_pressed(mb_left) {
 		global.draggable = false;
 }
 	window_set_cursor(cr_handpoint);
+} else {
+	hover = false
 }
 
 if !mouse_check_button(mb_left) {
