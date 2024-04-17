@@ -24,5 +24,3 @@ draw_sprite_ext(spr_slider_button, 0, gui_pos, _y + (111 - hover_anim) * _h_scal
 //label
 draw_set_color(WHITE);
 label.draw(_x, _y + (110 + 10) * _h_scale);
-
-draw_text(_x - 100, _y, string(value));

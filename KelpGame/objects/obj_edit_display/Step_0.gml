@@ -1,17 +1,19 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-var _max = 100;
-photo_pos_step += 1;
+var _max = 25;
+photo_pos_step += 0.5;
 
 photo_pos_step = clamp(photo_pos_step, 0, _max);
 
 
 photo_pos = EaseInBack(photo_pos_step, 0, 820 + 82, _max);
 
-rotate = EaseInBack(lerp(100, 0, photo_pos_step / 100), 0, 90, _max);
+rotate = EaseInBack(lerp(_max, 0, photo_pos_step / _max), 0, 90, _max);
 
-
+if light_sweep > 0 {
+	light_sweep -= 60;
+}
 
 if flash > 0 && dis = true {
 	flash -= 0.05;

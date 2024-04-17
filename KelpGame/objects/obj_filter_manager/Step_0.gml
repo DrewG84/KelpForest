@@ -24,6 +24,8 @@ if tint = 0 {
 }
 fx_set_parameter(tint_fx, "g_Intensity", tint_intensity);
 
+
+if obj_edit_display.rotate = 0 {
 for (var i = 0; i < array_length(slider_array); i ++) {
 	var _struct = slider_array[i];
 	var _slider_val = 0;
@@ -51,4 +53,8 @@ for (var i = 0; i < array_length(slider_array); i ++) {
 			bloom = _slider_val;
 		break;
 	}
+}
+} else {
+	exposure = 1;
+	contrast = 1;
 }

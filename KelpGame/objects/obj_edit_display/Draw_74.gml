@@ -3,13 +3,20 @@
 var _w_scale = obj_window_scaler.w_ratio;
 var _h_scale = obj_window_scaler.h_ratio;
 
+if light_sweep > 0 {
+draw_set_color(WHITE);
+draw_set_alpha(0.3);
+draw_line_width((light_sweep) * _w_scale, 0 * _h_scale, (light_sweep - 320) * _w_scale, 1000 * _h_scale, 300 * _h_scale);
+draw_set_alpha(1);
+}
+
 
 var _surf = surface_create(1920 * _w_scale, 1080 * _h_scale);
 
 surface_set_target(_surf);
 
 
-if photo_pos_step = 100 {
+if photo_pos_step = 25 {
 draw_clear_alpha(BLACK, 1);
 
 
