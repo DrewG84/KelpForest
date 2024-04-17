@@ -18,4 +18,4 @@ y = 82 + radius;
 gui_pos = lerp((82 + radius) * obj_window_scaler.h_ratio, (82 + 916 - radius + 2) * obj_window_scaler.h_ratio, 1);
 gui_temp = ((gui_pos - (82 * obj_window_scaler.h_ratio))) / (916 * obj_window_scaler.h_ratio);
 
-line_anim = 0;
+hover_anim = 0;

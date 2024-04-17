@@ -4,42 +4,47 @@
 brightness_contrast_fx = layer_get_fx("brightness_contrast");
 exposure = 1.05;
 sld_exposure_struct = {
-	value: 1.1,
-	min_val: 0,
+	name: "Exposure",
+	val: 1.05,
+	min_val: 0.8,
 	mid_val: 1.05,
-	max_val: 2
+	max_val: 1.3
 }
 
 contrast = 1.2;
 sld_contrast_struct = {
-	value: 1.2,
-	min_val: 0,
-	mid_val: 1.2,
+	name: "Contrast",
+	val: 1.25,
+	min_val: 0.5,
+	mid_val: 1.25,
 	max_val: 2
 }
 
 bloom_fx = layer_get_fx("bloom");
 bloom = 0;
 sld_bloom_struct = {
-	value: 0,
+	name: "Bloom",
+	val: 0,
 	min_val: 0,
-	mid_val: 0.5,
-	max_val: 1
+	mid_val: 0.35,
+	max_val: 0.7
 }
 
 hue_sat_fx = layer_get_fx("hue_sat");
 
 hue = 0;
 sld_hue_struct = {
-	value: 0,
+	name: "Hue",
+	val: 0,
 	min_val: 0,
-	mid_val: 0.45,
-	max_val: 0.9
+	mid_val: 0.35,
+	max_val: 0.7
 }
 
 saturation = 1;
 sld_saturation_struct = {
-	value: 1,
+	name: "Saturation",
+	val: 1,
 	min_val: 0,
 	mid_val: 1,
 	max_val: 3
@@ -48,10 +53,18 @@ sld_saturation_struct = {
 tint_fx = layer_get_fx("tint");
 tint = 0;
 sld_tint_struct = {
-	value: 0,
+	name: "Tint",
+	val: 0,
 	min_val: 0,
-	mid_val: 255 / 2,
-	max_val: 255
+	mid_val: 225 / 2,
+	max_val: 225
+}
+
+slider_array = [sld_exposure_struct, sld_contrast_struct, sld_saturation_struct, sld_tint_struct, sld_bloom_struct];
+
+for (var i = 0; i < array_length(slider_array); i ++) {
+	var _struct = slider_array[i];
+	slider_array[i].slider = instance_create_layer(FX_X, i * 187, "Instances", obj_filter_slider_par, _struct);
 }
 
 tint_intensity = 0;

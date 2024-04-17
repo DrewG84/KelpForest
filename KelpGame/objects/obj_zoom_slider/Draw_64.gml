@@ -41,5 +41,8 @@ draw_set_color(ACCENT);
 //draw_roundrect_ext(_x - (78 * _w_scale), gui_pos - (45 * _w_scale), _x + (32 * _w_scale), gui_pos + (40 * _w_scale), 50 * _w_scale, 50 * _w_scale, false);
 
 draw_sprite_ext(spr_slider_button, 0, _x + (33 * _w_scale), gui_pos, -_w_scale, _w_scale, 0, c_white, 1);
+//move
+draw_sprite_ext(spr_slider_button, 0, _x + ((33 - hover_anim) * _w_scale), gui_pos, -_w_scale, _w_scale, 0, c_white, 1);
+
 
 //draw_text(window_mouse_get_x(), window_mouse_get_y(), string(gui_pos));

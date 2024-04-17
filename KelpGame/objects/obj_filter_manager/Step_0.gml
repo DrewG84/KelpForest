@@ -24,11 +24,31 @@ if tint = 0 {
 }
 fx_set_parameter(tint_fx, "g_Intensity", tint_intensity);
 
-
-
-if keyboard_check_pressed(vk_left) {
-	tint -= 5;
-}
-if keyboard_check_pressed(vk_right) {
-	tint += 5;
+for (var i = 0; i < array_length(slider_array); i ++) {
+	var _struct = slider_array[i];
+	var _slider_val = 0;
+	
+	if _struct.slider.value < 0.5 {
+		_slider_val = lerp(_struct.min_val, _struct.mid_val, _struct.slider.value * 2);
+	} else {
+		_slider_val = lerp(_struct.mid_val, _struct.max_val, (_struct.slider.value - 0.5) * 2);
+	}
+	
+	switch(i) {
+		case 0:
+			exposure = _slider_val;
+		break;
+		case 1:
+			contrast = _slider_val;
+		break;
+		case 2:
+			saturation = _slider_val;
+		break;
+		case 3:
+			tint = _slider_val;
+		break;
+		case 4:
+			bloom = _slider_val;
+		break;
+	}
 }

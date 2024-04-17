@@ -9,7 +9,17 @@ var _window_y = camera_get_view_y(view_camera[0]);
 var button_x = x;
 var button_y = y + ((slider_height * _scale) * (val));
 
-if point_in_rectangle(mouse_x, mouse_y, button_x - (78 * _scale), button_y - (45 * _scale), button_x + (32 * _scale), button_y + (45 * _scale)) {
+if hover = true {
+	hover_anim += 1;
+} else {
+	hover_anim -= 1;
+}
+hover_anim = clamp(hover_anim, 0, 12);
+if selected = true {
+	hover_anim = 12;
+}
+
+if point_in_rectangle(mouse_x, mouse_y, button_x - ((78 + 6) * _scale), button_y - (45 * _scale), button_x + (32 * _scale), button_y + (45 * _scale)) {
 	hover = true;
 if mouse_check_button_pressed(mb_left) {
 	

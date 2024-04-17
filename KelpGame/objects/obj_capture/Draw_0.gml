@@ -74,6 +74,7 @@ for(var i = 0; i < array_length(layers); i += 1) {
 	draw_surface(_premult_surf, 0,0);
 	shader_reset();
 	gpu_set_blendmode(bm_normal);
+	surface_free(_premult_surf)
 	}
 	
 	
@@ -135,6 +136,5 @@ repeat (3) {
 }
 surface_reset_target();
 
-show_debug_message(string(instance_number(obj_particle)))
 
 

@@ -8,6 +8,7 @@ if photo.image != -1 {
 
 	}	
 
+	
 	array_push(global.album, photo);
 	room_goto(rm_edit);
 }
