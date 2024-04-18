@@ -16,5 +16,8 @@
 
 #macro BLACK #181818
 #macro WHITE #FFFFE7
+#macro WHITE_DARK #E2E1C9
 #macro ACCENT #53D493
 #macro ACCENT_DARK #3aaf75
+#macro YELLOW #E5A80F
+#macro YELLOW_DARK #D3920F

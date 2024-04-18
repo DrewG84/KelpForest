@@ -12,6 +12,11 @@ draw_set_color(WHITE);
 draw_roundrect_ext(_x, _y + (46 * _h_scale), _x + ((slider_width + (radius * 2) - 2) * _w_scale), _y + (64 + 46) * _h_scale, 50 * _w_scale, 50 * _w_scale, false);
 draw_roundrect_ext(_x, _y + ((46 + 25) * _h_scale), _x + ((slider_width + (radius * 2) - 2) * _w_scale), _y + (64 + 46) * _h_scale, 22 * _w_scale, 22 * _w_scale, false);
 
+//slider fill
+
+draw_set_color(WHITE_DARK);
+draw_roundrect_ext(_x + (10 * _w_scale), _y + ((46 + 10) * _h_scale), _x + ((slider_width - 10 + (radius * 2) - 2) * _w_scale), _y + (64 + 46 - 10) * _h_scale, 50 * _w_scale, 50 * _w_scale, false);
+draw_roundrect_ext(_x + (10 * _w_scale), _y + ((46 + 25) * _h_scale), _x + ((slider_width - 10 + (radius * 2) - 2) * _w_scale), _y + (64 + 46 - 10) * _h_scale, 22 * _w_scale, 22 * _w_scale, false);
 
 //slider button
 //if selected = true {

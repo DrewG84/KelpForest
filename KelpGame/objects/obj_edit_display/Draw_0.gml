@@ -22,7 +22,7 @@ for (var i = 0; i < array_length(album_pos.species_array); i++) {
 	var _scale = album_pos.scale;
 	var _struct = album_pos.species_array[i];
 	
-	draw_text(lerp(0, 740, (_struct.x_pos / _scale) / 916) + photo_pos + 160, lerp(0, 740, (_struct.y_pos / _scale) / 916) + 82 + 40, string((_struct.x_pos / _scale)) + ", " + string((_struct.y_pos / _scale)));
+	draw_text(lerp(0, 740, (_struct.x_pos / _scale) / 916) + photo_pos + 160, lerp(0, 740, (_struct.y_pos / _scale) / 916) + 82 + 40, string(_struct.name));
 }
 
 

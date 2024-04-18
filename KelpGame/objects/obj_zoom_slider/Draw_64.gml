@@ -22,6 +22,11 @@ if selected = true {
 }
 
 //slider fill
+draw_set_color(WHITE_DARK);
+draw_roundrect_ext(_x - (20 * _w_scale), (_y + 10) * _h_scale, _x + (22 * _w_scale), (_y + 906) * _h_scale, 22 * _w_scale, 22 * _w_scale, false);
+draw_roundrect_ext(_x - (22 * _w_scale), (_y + 10) * _h_scale, _x + (5 * _w_scale), (_y + 906) * _h_scale, 50 * _w_scale, 50 * _w_scale, false);
+
+
 draw_set_color(ACCENT_DARK);
 draw_roundrect_ext(_x - (20 * _w_scale), gui_pos, _x + (22 * _w_scale), (_y + 906) * _h_scale, 22 * _w_scale, 22 * _w_scale, false);
 draw_roundrect_ext(_x - (22 * _w_scale), gui_pos, _x + (5 * _w_scale), (_y + 906) * _h_scale, 50 * _w_scale, 50 * _w_scale, false);
