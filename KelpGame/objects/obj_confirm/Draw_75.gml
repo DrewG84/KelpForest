@@ -8,17 +8,10 @@ draw_set_alpha(opacity);
 draw_rectangle(0, 0, 1920 * _w_scale, 1080 * _h_scale, false);
 draw_set_alpha(1);
 
-if up = true {
-	step -= 1;	
-} else {
-	step += 1;
-}
 
-step = clamp(step, 0, 100);
-opacity = lerp(0.5, 0, step / 100);
 
 var _x = 550;
-var _y = EaseInBack(step, 298, 1080 + 80, 100);
+var _y = EaseInBack(step, 298, 1080 + 80, 50);
 var _width = 820;
 var _height = 484;
 
@@ -41,16 +34,14 @@ content.wrap(obj_window_scaler.w_ratio * 660);
 
 
 go_btn.scale(obj_window_scaler.w_ratio);
-draw_set_font(ft_slider_label);
-_go_btn_width = string_width(btn2_text);
+
 draw_set_color(go_color);
 var go_x = _x + _width - 120 - _go_btn_width
 draw_roundrect_ext((go_x) * _w_scale, (_y + _height - 60) * _h_scale, (_x +_width - 40) * _w_scale, (_y + _height + 60) * _h_scale, 120 * _w_scale, 120 * _h_scale, false);
 go_btn.draw((go_x + 40) * _w_scale, (_y + _height - 30) * _h_scale);
 
 cancel_btn.scale(obj_window_scaler.w_ratio);
-draw_set_font(ft_slider_label);
-_cancel_btn_width = string_width(btn1_text);
+
 draw_set_color(cancel_color);
 var cancel_x = go_x - 40 - 40 - 40 - _cancel_btn_width;
 draw_roundrect_ext((cancel_x) * _w_scale, (_y + _height - 60) * _h_scale, (go_x - 40) * _w_scale, (_y + _height + 60) * _h_scale, 120 * _w_scale, 120 * _h_scale, false);
