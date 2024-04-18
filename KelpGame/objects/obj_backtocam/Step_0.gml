@@ -19,7 +19,7 @@ if instance_exists(obj_pan_zoom) {
 
 
 
-if point_in_circle(mouse_x, mouse_y, _window_x + x * _scale,_window_y +  y * _scale, 50 * _scale)
+if point_in_circle(mouse_x, mouse_y, _window_x + x * _scale,_window_y +  y * _scale, 60 * _scale)
 && !instance_exists(obj_confirm) {
 	hover = true;
 	color = ACCENT_DARK;
@@ -35,5 +35,5 @@ if point_in_circle(mouse_x, mouse_y, _window_x + x * _scale,_window_y +  y * _sc
 	color = ACCENT;
 }
 
-x = 132 + 50 + 50 + 20;
-y = 1080 - 82 - 50;
+x = 132 + 50 + 50 + 40;
+y = 1080 - 82 - 60;

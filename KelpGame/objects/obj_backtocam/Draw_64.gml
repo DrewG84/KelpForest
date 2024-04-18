@@ -3,6 +3,10 @@
 var _w_scale = obj_window_scaler.w_ratio;
 var _h_scale = obj_window_scaler.h_ratio;
 
+draw_set_color(WHITE);
+draw_circle(x * _w_scale, y * _h_scale, 60 * _w_scale, false);
+
+
 draw_set_color(color);
 draw_circle(x * _w_scale, y * _h_scale, 50 * _w_scale, false);
 

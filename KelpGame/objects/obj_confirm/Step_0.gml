@@ -18,7 +18,7 @@ opacity = lerp(0.5, 0, step / _max);
 var _x = 550;
 var _y = EaseInBack(step, 298, 1080 + 80, _max);
 var _width = 820;
-var _height = 484;
+var _height = 384;
 var go_x = _x + _width - 120 - _go_btn_width;
 var cancel_x = go_x - 40 - 40 - 40 - _cancel_btn_width;
 

@@ -25,7 +25,7 @@ if state = true {
 
 
 
-if point_in_circle(mouse_x, mouse_y, _window_x + x * _scale,_window_y +  y * _scale, 50 * _scale) 
+if point_in_circle(mouse_x, mouse_y, _window_x + x * _scale,_window_y +  y * _scale, 60 * _scale) 
 && !instance_exists(obj_confirm) {
 	hover = true;
 	color = YELLOW_DARK;
@@ -42,5 +42,5 @@ if point_in_circle(mouse_x, mouse_y, _window_x + x * _scale,_window_y +  y * _sc
 	color = YELLOW;
 }
 
-x = 132;
-y = 1080 - 82 - 50;
+x = 132 + 10;
+y = 1080 - 82 - 60;
