@@ -11,7 +11,7 @@ if instance_exists(obj_pan_zoom) {
 
 
 	
-	step += 1;
+	
 	rotate = 5 * sin(0.05 * step);
 	scalar = 1 + 0.1 * sin(0.1 * step);
 	
@@ -34,6 +34,12 @@ if point_in_circle(mouse_x, mouse_y, _window_x + x * _scale,_window_y +  y * _sc
 } else {
 	hover = false;
 	color = ACCENT;
+}
+
+if hover = true {
+	step += 1;
+} else {
+	step = 0;	
 }
 
 x = 132 + 10;

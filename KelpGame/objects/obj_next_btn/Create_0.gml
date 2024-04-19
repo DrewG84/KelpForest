@@ -11,7 +11,7 @@ radius_anim = 0;
 color = ACCENT;
 
 confirm_struct = {
-	title_text: "Are you sure?",
+	title_text: "Finished Editing?",
 	text: "You will not be able to continue editing your photo after this",
 	btn1_text: "Keep Editing",
 	btn2_text: "Done!",

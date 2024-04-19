@@ -16,8 +16,8 @@ if !variable_instance_exists(id, "grow") {
 
 if grow = true {
 	radius = 0;
-	grow_amount = 20;
+	grow_amount = 30;
 } else {
 	radius = max_rad;
-	grow_amount = -20;
+	grow_amount = -30;
 }

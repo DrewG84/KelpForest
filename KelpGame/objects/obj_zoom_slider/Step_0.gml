@@ -27,7 +27,7 @@ if mouse_check_button_pressed(mb_left) {
 		selected = true;
 		global.draggable = false;
 }
-	window_set_cursor(cr_handpoint);
+
 } else {
 	hover = false
 }

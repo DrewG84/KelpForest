@@ -7,7 +7,7 @@ var _x = 1920 - 82 - 82 - 62;
 var _y = 82 + 780;
 
 if radius > 0 {
-draw_set_color(WHITE_DARK);
+draw_set_color(WHITE);
 draw_circle(_x * _w_scale, _y * _h_scale, ((60 * radius) + 10) * _h_scale, false);
 
 

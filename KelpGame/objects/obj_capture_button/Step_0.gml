@@ -8,11 +8,25 @@ var _window_y = camera_get_view_y(view_camera[0]);
 if point_in_rectangle(mouse_x, mouse_y, _window_x + (1920 - 82 - 200) * _scale, _window_y + 82 * _scale, _window_x + (1920 - 82) * _scale, _window_y + (1080 - 82) * _scale) && global.draggable = true {
 
 	hover = true;
+	
+	if hover_step = 0 && global.play_sound = true {
+		
+		audio_play_sound(sd_trill, 0, false, 0.6);
+		
+	}
+	
 	hover_step += 0.02;
+	
 
 } else {
 
 	hover = false;
+	if hover_step = 0.5 && global.play_sound = true {
+		
+		audio_play_sound(sd_trill_reverse, 0, false, 0.6);
+		
+	}
+	
 	hover_step -= 0.02;
 
 }
