@@ -15,7 +15,9 @@ if val = min_val {
 if val = mid_val {
 	value = 0.5;	
 }
-max_val = 100;
+
+val_prev = value;
+max_val = 1;
 
 hover = false;
 hover_anim = 0;

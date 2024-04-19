@@ -31,9 +31,16 @@ if point_in_circle(mouse_x, mouse_y, _window_x + x * _scale,_window_y +  y * _sc
 	color = YELLOW_DARK;
 	if mouse_check_button_pressed(mb_left) {
 		if state = false {
+			global.play_sound = true
 			state = true;
+			audio_play_sound(sd_music, 0, true);
+			click_sound();
 		} else {
+			click_sound();
+			global.play_sound = false;
+			audio_stop_sound(sd_music)
 			state = false;
+			
 		}
 	}
 	

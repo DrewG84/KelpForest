@@ -40,7 +40,15 @@ if !mouse_check_button(mb_left) {
 }
 
 if selected {
-	value = clamp((((mouse_x) - (x + 45))) / (slider_width), 0, 1);
+	value = clamp((((mouse_x) - (x + 45))) / (slider_width), 0, max_val);
+	
+	if value != val_prev {
+		if !audio_is_playing(sd_slider) && global.play_sound = true && value < 1 && value > 0 {
+		audio_play_sound(sd_slider, 0, false, 1, 0, lerp(0.7, 1.3, value));
+		}
+	}
+	
+	val_prev = clamp((((mouse_x) - (x + 45))) / (slider_width), 0, max_val);
 	//event_user(0);
 }
 

@@ -27,5 +27,7 @@ if state = false {
 	
 	draw_set_color(BLACK)
 	draw_line_width((x - 32 + 5) * _w_scale, (y - 32 + 8 - 8) * _h_scale, (x + 32 - 5) * _w_scale, (y + 32 + 8 - 14) * _h_scale, 10 * _w_scale);
+	draw_circle((x - 32 + 5) * _w_scale, (y - 32 + 8 - 8) * _h_scale, 5 * _w_scale, false);
+	draw_circle((x + 32 - 5) * _w_scale, (y + 32 + 8 - 14) * _h_scale, 5 * _w_scale, false);
 	
 }

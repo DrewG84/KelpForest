@@ -25,6 +25,7 @@ if point_in_circle(mouse_x, mouse_y, _window_x + x * _scale,_window_y +  y * _sc
 	color = ACCENT_DARK;
 	if mouse_check_button_pressed(mb_left) {
 		instance_create_layer(0,0, "Instances", obj_confirm, confirm_struct);
+		click_sound();
 		
 		//room_goto(rm_camera)
 		

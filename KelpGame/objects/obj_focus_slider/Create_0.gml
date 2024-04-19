@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 val = 1;
+val_prev = 1;
 max_value = 1;
 selected = false;
 
