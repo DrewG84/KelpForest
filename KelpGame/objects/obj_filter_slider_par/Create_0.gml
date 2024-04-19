@@ -26,8 +26,8 @@ y_val = y;
 
 radius = 45;
 //slider_width = 548 - (2 * radius);
-slider_width = 548 - (radius * 2)
-
+slider_width = 500 - (radius * 2)
+//548
 
 var _w_scale = obj_window_scaler.w_ratio;
 var _h_scale = obj_window_scaler.h_ratio;

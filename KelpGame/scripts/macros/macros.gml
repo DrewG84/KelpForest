@@ -10,7 +10,7 @@
 #macro FOCUS_X 502 + 916 + 82
 //default 916 + 82 + 82 + 82
 
-#macro FX_X 388
+#macro FX_X 388 + 48
 
 //color
 

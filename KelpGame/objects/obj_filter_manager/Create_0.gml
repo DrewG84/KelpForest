@@ -64,7 +64,7 @@ slider_array = [sld_exposure_struct, sld_contrast_struct, sld_saturation_struct,
 
 for (var i = 0; i < array_length(slider_array); i ++) {
 	var _struct = slider_array[i];
-	slider_array[i].slider = instance_create_layer(FX_X, i * 187, "Instances", obj_filter_slider_par, _struct);
+	slider_array[i].slider = instance_create_layer(FX_X, i * 189, "Instances", obj_filter_slider_par, _struct);
 }
 
 tint_intensity = 0;

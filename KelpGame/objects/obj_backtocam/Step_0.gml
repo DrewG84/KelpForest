@@ -36,5 +36,5 @@ if point_in_circle(mouse_x, mouse_y, _window_x + x * _scale,_window_y +  y * _sc
 	color = ACCENT;
 }
 
-x = 132 + 50 + 50 + 40;
-y = 1080 - 82 - 60;
+x = 132 + 10;
+y = 1080 - 82 - 60 - 70 - 50 - 20;

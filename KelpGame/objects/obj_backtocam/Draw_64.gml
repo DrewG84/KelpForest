@@ -11,7 +11,8 @@ draw_set_color(color);
 draw_circle(x * _w_scale, y * _h_scale, 50 * _w_scale, false);
 
 
-draw_set_color(WHITE);
-draw_triangle((x - 20) * _w_scale, (y - 0) * _h_scale, (x - 20) * _w_scale, (y - 40 - 0) * _h_scale, (x - 20 - 30) * _w_scale, (y - 20 - 0) * _h_scale, false);
+draw_set_color(WHITE_DARK);
+//draw_triangle((x - 20) * _w_scale, (y - 0) * _h_scale, (x - 20) * _w_scale, (y - 40 - 0) * _h_scale, (x - 20 - 30) * _w_scale, (y - 20 - 0) * _h_scale, false);
+draw_sprite_ext(spr_arrow, 0, (x - 25) * _w_scale, (y - 20) * _h_scale, 0.7 * _w_scale, 0.7 * _w_scale, 0, WHITE_DARK, 1);
 
 draw_sprite_ext(spr_camera_icon, 0, x * _w_scale, (y) * _h_scale, _w_scale / 1.7, (_h_scale / 1.7) * scalar, rotate, c_white, 1);

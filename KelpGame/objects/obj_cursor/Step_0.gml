@@ -45,6 +45,7 @@ if room = rm_edit {
 	
 	if obj_sound_toggle.hover = true ||
 	obj_backtocam.hover = true ||
+	obj_next_btn.hover = true ||
 	_hover = true {
 		
 		if mouse_check_button(mb_left) = true {
