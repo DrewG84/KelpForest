@@ -6,12 +6,12 @@ event_inherited();
 
 if irandom_range(0, 5) = 0 {
 	sprite = spr_sheephead_male;
-	name = "California Sheephead (Male)";
+	name = "California Sheephead (M)";
 	tail_width = 185;
 	scale = 2.5
 } else {
 	sprite = spr_sheephead_female;
-	name = "California Sheephead (Female)";
+	name = "California Sheephead (F)";
 	tail_width = 185;
 	scale = 3
 }

@@ -16,4 +16,5 @@ confirm_struct = {
 	btn1_text: "Keep Editing",
 	btn2_text: "Done!",
 	room_val: rm_camera,
+	instance: obj_capture_filter,
 }

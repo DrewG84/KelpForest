@@ -13,4 +13,5 @@ confirm_struct = {
 	btn1_text: "Cancel",
 	btn2_text: "Return",
 	room_val: rm_camera,
+	instance: obj_room_trans,
 }

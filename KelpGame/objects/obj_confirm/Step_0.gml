@@ -75,7 +75,7 @@ if mouse_check_button_pressed(mb_left) && !instance_exists(obj_room_trans) {
 		new_room_val: room_val,
 	}
 	click_sound();
-	instance_create_depth(0,0, depth - 100, obj_room_trans, _struct);
+	instance_create_depth(0,0, depth - 100, instance, _struct);
 	
 
 }
