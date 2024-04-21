@@ -78,3 +78,44 @@ if room = rm_edit {
 
 	
 }
+
+
+if room = rm_album {
+	
+	if !instance_exists(obj_confirm) {
+	
+	
+	
+	if obj_sound_toggle.hover = true ||
+	obj_backtocam.hover = true  {
+		
+		if mouse_check_button(mb_left) = true {
+			//cursor_sprite = spr_cursor_click;
+			window_set_cursor(cr_drag);
+		} else {
+			//cursor_sprite = spr_cursor_hover;
+			window_set_cursor(cr_handpoint);
+		}
+	
+	} else {
+		//cursor_sprite = spr_cursor_point;
+		window_set_cursor(cr_default);
+	}
+	
+	} else {
+		
+		if obj_confirm.go_hover = true ||
+		obj_confirm.cancel_hover = true {
+			
+			window_set_cursor(cr_handpoint);
+			show_debug_message("hover")
+			
+		} else {
+			window_set_cursor(cr_default);
+		}
+		
+		
+	}
+
+	
+}

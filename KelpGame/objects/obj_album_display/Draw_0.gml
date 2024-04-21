@@ -22,11 +22,26 @@ draw_sprite_ext(spr_photo_frame, 0, 0, 0, 1, 1, 0, c_white, 1);
 surface_reset_target();
 
 
-for (var i = 0; i < array_length(album_pos.species_array); i++) {
+//for (var i = 0; i < array_length(album_pos.species_array); i++) {
 	
+//	var _scale = album_pos.scale;
+//	var _struct = album_pos.species_array[i];
+	
+//	draw_set_font(ft_slider_label);
+//	draw_text(lerp(0, 740, (_struct.x_pos / _scale) / 916) + FX_X + 40, lerp(0, 740, (_struct.y_pos / _scale) / 916) + 82 + 40, string(_struct.name));
+//}
+
+if !is_undefined(album_pos.star) {
 	var _scale = album_pos.scale;
-	var _struct = album_pos.species_array[i];
+	var _struct = album_pos.star;
 	
 	draw_set_font(ft_slider_label);
-	draw_text(lerp(0, 740, (_struct.x_pos / _scale) / 916) + FX_X + 40, lerp(0, 740, (_struct.y_pos / _scale) / 916) + 82 + 40, string(_struct.name));
+	
+	if lerp(0, 740,(_struct.y_pos / _scale) / 916) - (120 * (1 + _scale / 2)) > 0 {
+	draw_sprite_ext(spr_star_subject, 0, lerp(0, 740, (_struct.x_pos / _scale) / 916) + FX_X + 40, lerp(0, 740, (_struct.y_pos / _scale) / 916) + 82 + 40 + (1200 - photo_pos) - (60 * (1 + _scale / 2)), 1, 1, 0, c_white, 1);
+	} else {
+	draw_sprite_ext(spr_star_subject, 0, lerp(0, 740, (_struct.x_pos / _scale) / 916) + FX_X + 40, lerp(0, 740, (_struct.y_pos / _scale) / 916) + 82 + 40 + (1200 - photo_pos) + (60 * (1 + _scale / 2)), 1, -1, 0, c_white, 1);
+	}
+	//draw_text(lerp(0, 740, (_struct.x_pos / _scale) / 916) + FX_X + 40, lerp(0, 740, (_struct.y_pos / _scale) / 916) + 82 + 40 - (80 * _scale), string(_struct.name));
 }
+
