@@ -40,7 +40,7 @@ vertex_begin(vbuff, format);
 for (var i = irandom_range(0 - sep / 2, 0); i < width + 800; i += irandom_range(sep / 2, sep)) {
 	
 		
-		show_debug_message("light")
+		
 		var x1 = i - (beam_width / 2);
 		var y1 = -20;
 		var x2 = x1 + beam_width;

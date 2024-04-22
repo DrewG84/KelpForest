@@ -13,6 +13,8 @@ draw_circle(_x * _w_scale, _y * _h_scale, ((60 * radius) + 10) * _h_scale, false
 
 draw_set_color(color);
 draw_circle(_x * _w_scale, _y * _h_scale, (60 * radius) * _h_scale, false);
-}
+
 
 draw_sprite_ext(spr_arrow, 0, _x * _w_scale, (_y + 5 * sin(hover_anim)) * _h_scale, _w_scale * -1.3 * radius, _h_scale * 1.3 * radius, -5 * sin(hover_anim), c_white, 1);
+
+}

@@ -67,7 +67,7 @@ if room = rm_edit {
 		obj_confirm.cancel_hover = true {
 			
 			window_set_cursor(cr_handpoint);
-			show_debug_message("hover")
+			
 			
 		} else {
 			window_set_cursor(cr_default);
@@ -87,6 +87,8 @@ if room = rm_album {
 	
 	
 	if obj_sound_toggle.hover = true ||
+	obj_save_button.hover = true ||
+	obj_learn_more.hover = true ||
 	obj_backtocam.hover = true  {
 		
 		if mouse_check_button(mb_left) = true {
@@ -108,7 +110,7 @@ if room = rm_album {
 		obj_confirm.cancel_hover = true {
 			
 			window_set_cursor(cr_handpoint);
-			show_debug_message("hover")
+			
 			
 		} else {
 			window_set_cursor(cr_default);

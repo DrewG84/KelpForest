@@ -18,7 +18,7 @@ content.starting_format("ft_slider_label", BLACK);
 
 
 
-cancel_btn = scribble(btn1_text);
+cancel_btn = scribble(btn1_icon + btn1_text);
 cancel_btn.scale(obj_window_scaler.w_ratio);
 cancel_btn.starting_format("ft_slider_label", WHITE);
 _cancel_btn_width = 0;
@@ -26,10 +26,10 @@ cancel_hover = false;
 cancel_hover_prev = false;
 cancel_color =  YELLOW;
 draw_set_font(ft_slider_label);
-_cancel_btn_width = string_width(btn1_text);
+_cancel_btn_width = string_width(btn1_text) + 26;
 
 
-go_btn = scribble(btn2_text);
+go_btn = scribble(btn2_icon + btn2_text);
 go_btn.scale(obj_window_scaler.w_ratio);
 go_btn.starting_format("ft_slider_label", WHITE);
 _go_btn_width = 0;
@@ -37,7 +37,7 @@ go_hover = false;
 go_hover_prev = false;
 go_color =  ACCENT;
 draw_set_font(ft_slider_label);
-_go_btn_width = string_width(btn2_text);
+_go_btn_width = 26 +  string_width(btn2_text);
 
 
 opacity = 0.5;

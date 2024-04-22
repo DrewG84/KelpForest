@@ -15,19 +15,19 @@ name = star.name;
 switch (name) {
 	case "California Sheephead (M)":
 		latin = "Semicossyphus pulcher";
-		desc = "All sheephead are born female and can develop into males when the ratio of males to females becomes imbalanced in a local population";
+		desc = "All sheephead are born female and can develop into males when the ratio of males to females becomes imbalanced in a local population.";
 		link = "https://www.montereybayaquarium.org/animals/animals-a-to-z/california-sheephead";
 		
 	break;
 	case "California Sheephead (F)":
 		latin = "Semicossyphus pulcher";
-		desc = "All sheephead are born female and can develop into males when the ratio of males to females becomes imbalanced in a local population";
+		desc = "All sheephead are born female and can develop into males when the ratio of males to females becomes imbalanced in a local population.";
 		link = "https://www.montereybayaquarium.org/animals/animals-a-to-z/california-sheephead";
 
 	break;
 	case "Garibaldi":
 		latin = "Hypsypops rubicundus";
-		desc = "Garibaldi are named after the Italian hero, Giuseppe Garibaldi, who in the 1840s, an decided to start wearing bright red shirts as part of his personal style.";
+		desc = "Garibaldi are named after the Italian hero, Giuseppe Garibaldi, who in the 1840s decided to start wearing bright red shirts as part of his personal style.";
 		link = "https://www.montereybayaquarium.org/animals/animals-a-to-z/garibaldi";
 		
 	break;

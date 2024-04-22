@@ -42,6 +42,7 @@ if !is_undefined(album_pos.star) {
 	} else {
 	draw_sprite_ext(spr_star_subject, 0, lerp(0, 740, (_struct.x_pos / _scale) / 916) + FX_X + 40, lerp(0, 740, (_struct.y_pos / _scale) / 916) + 82 + 40 + (1200 - photo_pos) + (60 * (1 + _scale / 2)), 1, -1, 0, c_white, 1);
 	}
+
 	//draw_text(lerp(0, 740, (_struct.x_pos / _scale) / 916) + FX_X + 40, lerp(0, 740, (_struct.y_pos / _scale) / 916) + 82 + 40 - (80 * _scale), string(_struct.name));
 }
 

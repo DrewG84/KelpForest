@@ -14,14 +14,17 @@ surface_free(main_surface);
 if array_length(photo.species_array) > 0 {
 array_sort(photo.species_array, function(elm1, elm2)
 {
-	var middle_x = sprite_get_width(photo.image) / 2;
-	var middle_y = sprite_get_height(photo.image) / 2;
+	var _scale = obj_pan_zoom.scale;
+	
+	var middle_x =  458 * _scale;
+	var middle_y = (82 + 458) * _scale;
+	show_debug_message(string(left) + ", " + string(top))
     return point_distance(elm1.x_pos, elm1.y_pos, middle_x, middle_y) - point_distance(elm2.x_pos, elm2.y_pos, middle_x, middle_y);
 });
 
 photo.star = photo.species_array[0]
 
 
-show_debug_message(string(photo.star))
+show_debug_message(string(photo.species_array))
 }
 //show_debug_message(string(sprite_get_width(photo.image)) + ", " + string(sprite_get_height(photo.image)))
