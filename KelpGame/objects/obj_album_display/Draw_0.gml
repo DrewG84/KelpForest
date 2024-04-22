@@ -16,9 +16,20 @@ if !surface_exists(saving_surface) {
 }
 
 surface_set_target(saving_surface);
-draw_sprite_ext(_sprite, 0, 40, 40, 740 / sprite_get_width(_sprite), 740 / sprite_get_height(_sprite), 0, c_white, 1);
+draw_clear_alpha(BLACK, 0);
 
+
+ 
+gpu_set_blendmode_ext(bm_one, bm_inv_src_alpha);
+	shader_set(shd_premult);
+	repeat 30 {
+	draw_sprite_ext(_sprite, 0, 40, 40, 740 / sprite_get_width(_sprite), 740 / sprite_get_height(_sprite), 0, c_white, 1);
+	}
 draw_sprite_ext(spr_photo_frame, 0, 0, 0, 1, 1, 0, c_white, 1);
+	shader_reset();
+
+
+gpu_set_blendmode(bm_normal)
 surface_reset_target();
 
 
