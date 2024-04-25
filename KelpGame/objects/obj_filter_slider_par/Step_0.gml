@@ -6,7 +6,7 @@ var button_y = (82 + y_val + 110);
 label.scale(obj_window_scaler.w_ratio);
 
 //if point_in_circle(mouse_x, mouse_y, button_x, button_y, radius * _scale) {
-if point_in_rectangle(mouse_x, mouse_y, button_x - (45), button_y - (110), button_x + (45), button_y) 
+if point_in_rectangle(mouse_x, mouse_y, button_x - (45), button_y - (110 - 15), button_x + (45), button_y) 
 && !instance_exists(obj_confirm) {
 	hover = true;
 if mouse_check_button_pressed(mb_left) {
@@ -57,7 +57,7 @@ if hover = true {
 } else {
 	hover_anim -= 1;
 }
-hover_anim = clamp(hover_anim, 0, 12);
+hover_anim = clamp(hover_anim, 0, 8);
 if selected = true {
-	hover_anim = 12;
+	hover_anim = 8;
 }

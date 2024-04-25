@@ -24,7 +24,7 @@ hover_anim = 0;
 
 y_val = y;
 
-radius = 45;
+radius = 55;
 //slider_width = 548 - (2 * radius);
 slider_width = 500 - (radius * 2)
 //548

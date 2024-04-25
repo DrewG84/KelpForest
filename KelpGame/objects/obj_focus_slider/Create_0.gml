@@ -8,7 +8,7 @@ selected = false;
 
 hover = false;
 
-radius = 45;
+radius = 55;
 slider_height = 916 - (2 * radius - 2);
 
 

@@ -8,10 +8,14 @@ var _x = (x_pos) * _w_scale;
 var _y = 82;
 
 
+
+
 //draw slider range
 draw_set_color(WHITE);
 draw_roundrect_ext(_x - (25 * _w_scale), _y * _h_scale, _x + (32 * _w_scale), (_y + 916) * _h_scale, 22 * _w_scale, 22 * _w_scale, false);
 draw_roundrect_ext(_x - (32 * _w_scale), _y * _h_scale, _x + (10 * _w_scale), (_y + 916) * _h_scale, 50 * _w_scale, 50 * _w_scale, false);
+
+
 
 //get slider pos
 if selected = true {
@@ -26,6 +30,10 @@ draw_set_color(WHITE_DARK);
 draw_roundrect_ext(_x - (20 * _w_scale), (_y + 10) * _h_scale, _x + (22 * _w_scale), (_y + 906) * _h_scale, 22 * _w_scale, 22 * _w_scale, false);
 draw_roundrect_ext(_x - (22 * _w_scale), (_y + 10) * _h_scale, _x + (5 * _w_scale), (_y + 906) * _h_scale, 50 * _w_scale, 50 * _w_scale, false);
 
+//slider outline
+draw_sprite_ext(spr_slider_outline, 0, _x + (33 * _w_scale), gui_pos, -_w_scale, _w_scale, 0, c_white, 1);
+//move
+draw_sprite_ext(spr_slider_outline, 0, _x + ((33 - hover_anim) * _w_scale), gui_pos, -_w_scale, _w_scale, 0, c_white, 1);
 
 draw_set_color(ACCENT_DARK);
 draw_roundrect_ext(_x - (20 * _w_scale), gui_pos, _x + (22 * _w_scale), (_y + 906) * _h_scale, 22 * _w_scale, 22 * _w_scale, false);

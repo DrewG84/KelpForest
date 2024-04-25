@@ -18,13 +18,18 @@ draw_set_color(WHITE_DARK);
 draw_roundrect_ext(_x + (10 * _w_scale), _y + ((46 + 10) * _h_scale), _x + ((slider_width - 10 + (radius * 2) - 2) * _w_scale), _y + (64 + 46 - 10) * _h_scale, 50 * _w_scale, 50 * _w_scale, false);
 draw_roundrect_ext(_x + (10 * _w_scale), _y + ((46 + 25) * _h_scale), _x + ((slider_width - 10 + (radius * 2) - 2) * _w_scale), _y + (64 + 46 - 10) * _h_scale, 22 * _w_scale, 22 * _w_scale, false);
 
+draw_sprite_ext(spr_slider_outline, 1, gui_pos, _y + (111) * _h_scale, _w_scale, _w_scale, 90, c_white, 1);
+//move
+draw_sprite_ext(spr_slider_outline, 1, gui_pos, _y + (111 - hover_anim) * _h_scale, _w_scale, _w_scale, 90, c_white, 1);
+
+
 //slider button
 //if selected = true {
 	gui_pos = (x + radius + ((slider_width) * (value))) * _w_scale;
 //}
-draw_sprite_ext(spr_slider_button, 0, gui_pos, _y + (111) * _h_scale, _w_scale, _w_scale, 90, c_white, 1);
+draw_sprite_ext(spr_slider_button, 1, gui_pos, _y + (111) * _h_scale, _w_scale, _w_scale, 90, c_white, 1);
 //move
-draw_sprite_ext(spr_slider_button, 0, gui_pos, _y + (111 - hover_anim) * _h_scale, _w_scale, _w_scale, 90, c_white, 1);
+draw_sprite_ext(spr_slider_button, 1, gui_pos, _y + (111 - hover_anim) * _h_scale, _w_scale, _w_scale, 90, c_white, 1);
 
 //label
 draw_set_color(WHITE);
