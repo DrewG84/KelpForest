@@ -44,7 +44,7 @@ for (var i = 1; i < 5; i++) {
 	if _tick_y > gui_pos - radius * _h_scale {
 		_color = WHITE;	
 	} else {
-		_color = ACCENT;	
+		_color = WHITE;	
 	}
 	draw_set_color(_color);
 	
@@ -75,5 +75,6 @@ draw_set_color(ACCENT);
 draw_sprite_ext(spr_slider_button, 0, _x - (32 * _w_scale), gui_pos, _w_scale, _w_scale, 0, c_white, 1);
 //moving
 draw_sprite_ext(spr_slider_button, 0, _x - ((32 - hover_anim) * _w_scale), gui_pos, _w_scale, _w_scale, 0, c_white, 1);
+draw_sprite_ext(spr_focus_icon, 0, _x - (32 * _w_scale), gui_pos, _w_scale, _w_scale, 0, c_white, 1);
 
 //draw_text(window_mouse_get_x(), window_mouse_get_y(), string(gui_pos));

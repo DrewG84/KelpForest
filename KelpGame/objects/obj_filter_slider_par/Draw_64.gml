@@ -19,7 +19,7 @@ draw_roundrect_ext(_x + (10 * _w_scale), _y + ((46 + 10) * _h_scale), _x + ((sli
 draw_roundrect_ext(_x + (10 * _w_scale), _y + ((46 + 25) * _h_scale), _x + ((slider_width - 10 + (radius * 2) - 2) * _w_scale), _y + (64 + 46 - 10) * _h_scale, 22 * _w_scale, 22 * _w_scale, false);
 
 
-draw_set_color(ACCENT)
+draw_set_color(WHITE)
 draw_circle(_x + (35 * _w_scale), _y + (46 + 34) * _h_scale, 8 * _w_scale, false);
 draw_circle(_x + ((slider_width + (radius * 2) - 40) * _w_scale), _y + (46 + 34) * _h_scale, 14 * _w_scale, false);
 

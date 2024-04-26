@@ -61,6 +61,7 @@
     {"name":"obj_garibaldi","order":3,"path":"objects/obj_garibaldi/obj_garibaldi.yy",},
     {"name":"obj_info_text","order":1,"path":"objects/obj_info_text/obj_info_text.yy",},
     {"name":"obj_learn_more","order":9,"path":"objects/obj_learn_more/obj_learn_more.yy",},
+    {"name":"obj_leopard_shark","order":7,"path":"objects/obj_leopard_shark/obj_leopard_shark.yy",},
     {"name":"obj_light_beams","order":1,"path":"objects/obj_light_beams/obj_light_beams.yy",},
     {"name":"obj_logo","order":5,"path":"objects/obj_logo/obj_logo.yy",},
     {"name":"obj_next_btn","order":7,"path":"objects/obj_next_btn/obj_next_btn.yy",},
@@ -70,7 +71,6 @@
     {"name":"obj_room_trans","order":6,"path":"objects/obj_room_trans/obj_room_trans.yy",},
     {"name":"obj_save_button","order":8,"path":"objects/obj_save_button/obj_save_button.yy",},
     {"name":"obj_sheephead","order":1,"path":"objects/obj_sheephead/obj_sheephead.yy",},
-    {"name":"obj_leopard_shark","order":7,"path":"objects/obj_leopard_shark/obj_leopard_shark.yy",},
     {"name":"obj_sound_toggle","order":4,"path":"objects/obj_sound_toggle/obj_sound_toggle.yy",},
     {"name":"obj_stationary","order":6,"path":"objects/obj_stationary/obj_stationary.yy",},
     {"name":"rm_album","order":2,"path":"rooms/rm_album/rm_album.yy",},
@@ -208,5 +208,7 @@
     {"name":"spr_speaker_base","order":1,"path":"sprites/spr_speaker_base/spr_speaker_base.yy",},
     {"name":"spr_star_subject","order":5,"path":"sprites/spr_star_subject/spr_star_subject.yy",},
     {"name":"spr_star","order":4,"path":"sprites/spr_star/spr_star.yy",},
+    {"name":"spr_zoom_icon","order":11,"path":"sprites/spr_zoom_icon/spr_zoom_icon.yy",},
+    {"name":"spr_focus_icon","order":12,"path":"sprites/spr_focus_icon/spr_focus_icon.yy",},
   ],
 }

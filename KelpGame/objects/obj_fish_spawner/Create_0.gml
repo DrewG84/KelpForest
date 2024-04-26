@@ -13,7 +13,7 @@ repeat(5)
 
 repeat(120)
 {
-	instance_create_layer(irandom(room_width),irandom(room_height), choose("fish1", "fish2", "foreground"), obj_anchovy)
+	instance_create_layer(irandom(room_width),irandom(room_height), choose("fish1", "fish2", "fish3", "foreground"), obj_anchovy)
 }
 
 repeat(2)
