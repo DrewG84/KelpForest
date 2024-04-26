@@ -10,7 +10,7 @@ hover = false;
 confirm_struct = {
 	title_text: "Want to go back?",
 	text: "Returning to the camera now will delete this photo",
-	btn1_text: " Cancel",
+	btn1_text: " Keep Working",
 	btn1_icon: "[spr_close]",
 	btn2_text: " Return",
 	btn2_icon: "[spr_continue,0]",

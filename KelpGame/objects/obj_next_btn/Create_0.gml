@@ -13,7 +13,7 @@ color = ACCENT;
 confirm_struct = {
 	title_text: "Finished Editing?",
 	text: "You will not be able to continue editing your photo after this",
-	btn1_text: " Keep Editing",
+	btn1_text: " Keep Working",
 	btn1_icon: "[spr_close]",
 	btn2_text: " Done!",
 	btn2_icon: "[spr_continue,1]",

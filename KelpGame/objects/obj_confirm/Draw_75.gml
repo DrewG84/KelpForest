@@ -24,7 +24,7 @@ draw_set_font(ft_button1);
 var _title_width = string_width(title_text) / 1.6;
 draw_set_color(WHITE_DARK);
 draw_roundrect_ext((_x + 40 - 10) * _w_scale, (_y - 60 - 10) * _h_scale, (_x + 25 + 10 + _title_width) * _w_scale, (_y + 60 + 10) * _h_scale, 130 * _w_scale, 130 * _h_scale, false);
-draw_set_color(ACCENT);
+draw_set_color(ACCENT_DARK);
 draw_roundrect_ext((_x + 40) * _w_scale, (_y - 60) * _h_scale, (_x + 25 + _title_width) * _w_scale, (_y + 60) * _h_scale, 120 * _w_scale, 120 * _h_scale, false);
 title.draw((_x + 80) * _w_scale, (_y - 30) * _h_scale);
 

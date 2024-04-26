@@ -30,6 +30,10 @@ draw_set_color(WHITE_DARK);
 draw_roundrect_ext(_x - (20 * _w_scale), (_y + 10) * _h_scale, _x + (22 * _w_scale), (_y + 906) * _h_scale, 22 * _w_scale, 22 * _w_scale, false);
 draw_roundrect_ext(_x - (22 * _w_scale), (_y + 10) * _h_scale, _x + (5 * _w_scale), (_y + 906) * _h_scale, 50 * _w_scale, 50 * _w_scale, false);
 
+//dots
+draw_set_color(ACCENT);
+draw_circle(_x + (0 * _w_scale), (_y + 35) * _h_scale, 14 * _w_scale, false);
+
 //slider outline
 draw_sprite_ext(spr_slider_outline, 0, _x + (33 * _w_scale), gui_pos, -_w_scale, _w_scale, 0, c_white, 1);
 //move
@@ -38,6 +42,11 @@ draw_sprite_ext(spr_slider_outline, 0, _x + ((33 - hover_anim) * _w_scale), gui_
 draw_set_color(ACCENT_DARK);
 draw_roundrect_ext(_x - (20 * _w_scale), gui_pos, _x + (22 * _w_scale), (_y + 906) * _h_scale, 22 * _w_scale, 22 * _w_scale, false);
 draw_roundrect_ext(_x - (22 * _w_scale), gui_pos, _x + (5 * _w_scale), (_y + 906) * _h_scale, 50 * _w_scale, 50 * _w_scale, false);
+
+//dots
+draw_set_color(WHITE);
+draw_circle(_x + (0 * _w_scale), (_y + 906 - 25) * _h_scale, 8 * _w_scale, false);
+
 
 //for (var i = (_y + 10) * _h_scale; i < (_y + 876) * _h_scale; i += 25 * _h_scale) {
 //	draw_set_color(WHITE);

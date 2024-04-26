@@ -31,6 +31,24 @@ switch (name) {
 		link = "https://www.montereybayaquarium.org/animals/animals-a-to-z/garibaldi";
 		
 	break;
+	case "Northern Anchovy":
+		latin = "Engraulis mordax";
+		desc = "Anchovies frequently seem to be \"yawning.\" That's how you know it's mealtime. They're opening wide, straining tiny plant and animal plankton from the water.";
+		link = "https://www.montereybayaquarium.org/animals/animals-a-to-z/northern-anchovy";
+		
+	break;
+	case "Bat Star":
+		latin = "Patiria miniata";
+		desc = "As a scavenger, the bat star plays an important role in the ecosystem, helping clean dead animals and algae from the seafloor.";
+		link = "https://www.montereybayaquarium.org/animals/animals-a-to-z/bat-star";
+		
+	break;
+	case "Leopard Shark":
+		latin = "Triakis semifasciata";
+		desc = "Leopard sharks are made to feed on the seafloor. Its mouth is on the flat underside of its head and opens downward. Skimming above the sand, leopard sharks eat crabs, clams, and fish eggs.";
+		link = "https://www.montereybayaquarium.org/animals/animals-a-to-z/leopard-shark";
+		
+	break;
 
 
 }

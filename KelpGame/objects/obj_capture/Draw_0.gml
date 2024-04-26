@@ -31,6 +31,7 @@ for(var i = 0; i < array_length(layers); i += 1) {
 		
 		with (_instance) {
 			event_perform(ev_draw, 0);
+			event_perform(ev_draw, ev_draw_begin);
 		}
 	}
 	

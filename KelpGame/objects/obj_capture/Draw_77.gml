@@ -18,11 +18,24 @@ array_sort(photo.species_array, function(elm1, elm2)
 	
 	var middle_x =  458 * _scale;
 	var middle_y = (82 + 458) * _scale;
-	show_debug_message(string(left) + ", " + string(top))
+	
     return point_distance(elm1.x_pos, elm1.y_pos, middle_x, middle_y) - point_distance(elm2.x_pos, elm2.y_pos, middle_x, middle_y);
 });
 
-photo.star = photo.species_array[0]
+
+var _anchovy_free = [];
+
+for (var i = 0; i < array_length(photo.species_array); i++) {
+	if photo.species_array[i].name != "Northern Anchovy" {
+		array_push(_anchovy_free,  photo.species_array[i]);
+	}
+}
+
+if array_length(_anchovy_free) = 0 {
+	photo.star = photo.species_array[0]
+} else {
+	photo.star = _anchovy_free[0];
+}
 
 
 show_debug_message(string(photo.species_array))

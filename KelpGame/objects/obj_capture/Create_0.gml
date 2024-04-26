@@ -38,6 +38,20 @@ for (var i = 0; i < instance_number(obj_flock_parent); i++) {
 		array_push(photo.species_array, _fish_struct);
 	}
 }
+
+for (var i = 0; i < instance_number(obj_stationary); i++) {
+	var _instance = instance_find(obj_stationary, i);
+	
+	if _instance.in_cam = true {
+		var _fish_struct = {
+			name: _instance.name,
+			x_pos: _instance.x - left,
+			y_pos: _instance.y - top,
+		}
+		
+		array_push(photo.species_array, _fish_struct);
+	}
+}
 //show_debug_message(string(photo.species_array))
 
 
