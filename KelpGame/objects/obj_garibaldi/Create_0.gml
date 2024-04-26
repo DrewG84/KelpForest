@@ -26,6 +26,6 @@ repeat (24) {
 }
 
 left_pad = 0;
-top_pad = 500;
+top_pad = 200;
 right_pad = 0;
 bottom_pad = 0;

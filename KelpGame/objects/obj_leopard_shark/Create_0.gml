@@ -8,7 +8,7 @@ event_inherited();
 	sprite = spr_leopard_shark;
 	name = "Leopard Shark";
 	tail_width = 250;
-	scale = 1.5
+	scale = 1.1
 	
 	direction = choose(0, 180);
 

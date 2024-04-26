@@ -7,5 +7,5 @@ event_inherited();
 sprite = spr_bat_star;
 name = "Bat Star";
 arm_step = 0;
-scale = 5;
+scale = 4.5;
 rotate = irandom(360);

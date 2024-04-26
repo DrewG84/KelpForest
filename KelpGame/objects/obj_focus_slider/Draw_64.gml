@@ -38,6 +38,19 @@ draw_set_color(ACCENT_DARK);
 draw_roundrect_ext(_x - (22 * _w_scale), gui_pos, _x + (5 * _w_scale), (_y + 906) * _h_scale, 20 * _w_scale, 20 * _w_scale, false);
 draw_roundrect_ext(_x - (20 * _w_scale), gui_pos, _x + (22 * _w_scale), (_y + 906) * _h_scale, 50 * _w_scale, 50 * _w_scale, false);
 
+for (var i = 1; i < 5; i++) {
+	var _color = ACCENT;
+	var _tick_y = lerp((_y + 10) * _h_scale, (_y + 906) * _h_scale, i / 5);
+	if _tick_y > gui_pos - radius * _h_scale {
+		_color = WHITE;	
+	} else {
+		_color = ACCENT;	
+	}
+	draw_set_color(_color);
+	
+	draw_roundrect_ext(_x - (10 * _w_scale), _tick_y - 6 * _h_scale, _x + (12 * _w_scale), _tick_y + 6 * _h_scale, 10 * _w_scale, 10 * _w_scale, false)
+}
+
 //for (var i = (_y + 10) * _h_scale; i < (_y + 876) * _h_scale; i += 25 * _h_scale) {
 //	draw_set_color(WHITE);
 //	draw_set_alpha(0.3)

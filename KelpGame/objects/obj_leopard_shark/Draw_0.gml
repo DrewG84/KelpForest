@@ -7,9 +7,9 @@ var angle = degtorad(direction_array[0] - 90);
 var xx = cos(angle) * (tail_width / scale);
 var yy = cos(angle) * (tail_width / scale);
 
-draw_sprite_ext(sprite, 3, x, y, y_scale / scale, 1 / scale, direction_array[0] - 90 + (sway / 1.3), c_white, 1);
+draw_sprite_ext(sprite, 3, x, y, y_scale / scale, 1 / scale, direction_array[0] - 90 + (sway / 1.2), c_white, 1);
 
-draw_sprite_ext(sprite, 2, x, y, y_scale / scale, 1 / scale, direction_array[3] - 90 + (sway / 1.4), c_white, 1);
+draw_sprite_ext(sprite, 2, x, y, y_scale / scale, 1 / scale, direction_array[3] - 90 + (sway / 1.3), c_white, 1);
 
 draw_sprite_ext(sprite, 1, x, y, y_scale / scale, 1 / scale, direction_array[6] - 90 + (sway / 1.5), c_white, 1);
 
