@@ -16,7 +16,7 @@ if mouse_check_button_pressed(mb_left) {
 }
 
 if mouse_check_button(mb_left) {
-	window_set_cursor(cr_drag);
+	//window_set_cursor(cr_drag);
 	view_x = drag_x - (mouse_x - view_x);
 	view_x = max(540 - 2 * WINDOW_X, min(view_x, (room_width - 458 + 82 - 2 * WINDOW_X)));
 	view_y = drag_y - (mouse_y - view_y);

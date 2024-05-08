@@ -12,7 +12,7 @@ draw_set_color(WHITE)
 draw_roundrect_ext((x - _width) * _w_scale, (y - _height) * _w_scale, (x + _width) * _w_scale, (y + _height) * _w_scale, 80 * _w_scale, 80 * _w_scale, false);
 
 
-scribble_anim_wave(3, 50, 0.1);
+scribble_anim_wave(3 * _w_scale, 50, 0.1);
 
 control_label.draw(x * _w_scale, y * _h_scale);
 scribble_anim_reset();

@@ -15,15 +15,15 @@ if obj_zoom_slider.hover = true ||
 		
 		if mouse_check_button(mb_left) = true {
 			//cursor_sprite = spr_cursor_click;
-			window_set_cursor(cr_drag);
+			window_set_cursor_sprite(spr_cursor, 0)
 		} else {
 			//cursor_sprite = spr_cursor_hover;
-			window_set_cursor(cr_handpoint);
+			window_set_cursor_sprite(spr_cursor, 2)
 		}
 	
 	} else {
 		//cursor_sprite = spr_cursor_point;
-		window_set_cursor(cr_default);
+		window_set_cursor_sprite(spr_cursor, 1)
 	}
 	
 } 
@@ -50,15 +50,15 @@ if room = rm_edit {
 		
 		if mouse_check_button(mb_left) = true {
 			//cursor_sprite = spr_cursor_click;
-			window_set_cursor(cr_drag);
+			window_set_cursor_sprite(spr_cursor, 0)
 		} else {
 			//cursor_sprite = spr_cursor_hover;
-			window_set_cursor(cr_handpoint);
+			window_set_cursor_sprite(spr_cursor, 2)
 		}
 	
 	} else {
 		//cursor_sprite = spr_cursor_point;
-		window_set_cursor(cr_default);
+		window_set_cursor_sprite(spr_cursor, 1)
 	}
 	
 	} else {
@@ -66,11 +66,11 @@ if room = rm_edit {
 		if obj_confirm.go_hover = true ||
 		obj_confirm.cancel_hover = true {
 			
-			window_set_cursor(cr_handpoint);
+			window_set_cursor_sprite(spr_cursor, 2)
 			
 			
 		} else {
-			window_set_cursor(cr_default);
+			window_set_cursor_sprite(spr_cursor, 1)
 		}
 		
 		
@@ -93,15 +93,15 @@ if room = rm_album {
 		
 		if mouse_check_button(mb_left) = true {
 			//cursor_sprite = spr_cursor_click;
-			window_set_cursor(cr_drag);
+			window_set_cursor_sprite(spr_cursor, 0)
 		} else {
 			//cursor_sprite = spr_cursor_hover;
-			window_set_cursor(cr_handpoint);
+			window_set_cursor_sprite(spr_cursor, 2)
 		}
 	
 	} else {
 		//cursor_sprite = spr_cursor_point;
-		window_set_cursor(cr_default);
+		window_set_cursor_sprite(spr_cursor, 1)
 	}
 	
 	} else {
@@ -109,11 +109,11 @@ if room = rm_album {
 		if obj_confirm.go_hover = true ||
 		obj_confirm.cancel_hover = true {
 			
-			window_set_cursor(cr_handpoint);
+			window_set_cursor_sprite(spr_cursor, 2)
 			
 			
 		} else {
-			window_set_cursor(cr_default);
+			window_set_cursor_sprite(spr_cursor, 1)
 		}
 		
 		
@@ -129,15 +129,19 @@ if obj_sound_toggle.hover = true ||
 		
 		if mouse_check_button(mb_left) = true {
 			//cursor_sprite = spr_cursor_click;
-			window_set_cursor(cr_drag);
+			//window_set_cursor(cr_drag);
+			window_set_cursor_sprite(spr_cursor, 0)
+			
 		} else {
 			//cursor_sprite = spr_cursor_hover;
-			window_set_cursor(cr_handpoint);
+			//window_set_cursor(cr_handpoint);
+			window_set_cursor_sprite(spr_cursor, 2)
 		}
 	
 	} else {
 		//cursor_sprite = spr_cursor_point;
-		window_set_cursor(cr_default);
+		//window_set_cursor(cr_default);
+		window_set_cursor_sprite(spr_cursor, 1)
 	}
 	
 } 

@@ -7,4 +7,5 @@ height = base_height;
 
 w_ratio = base_width / width;
 h_ratio = base_height / height;
+scribble_anim_wave(5 * w_ratio, 100, 0.1);
 
