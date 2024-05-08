@@ -66,7 +66,7 @@ latin_name.wrap(508);
 //species_name.line_spacing("95%");
 
 description = scribble(desc);
-description.starting_format("ft_slider_label", WHITE);
+description.starting_format("ft_body", WHITE);
 description.wrap(508);
 description.scale(0.8);
 description.line_spacing("90%");

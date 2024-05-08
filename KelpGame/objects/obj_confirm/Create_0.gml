@@ -14,7 +14,8 @@ title.starting_format("ft_button1", WHITE);
 content = scribble(text);
 content.scale(obj_window_scaler.w_ratio);
 content.wrap(obj_window_scaler.w_ratio * 760);
-content.starting_format("ft_slider_label", BLACK);
+content.starting_format("ft_body", BLACK);
+content.line_spacing("90%");
 
 
 
