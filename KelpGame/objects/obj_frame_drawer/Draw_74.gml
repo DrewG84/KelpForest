@@ -12,7 +12,7 @@ var _surf = surface_create(1920 * _w_scale, 1080 * _h_scale);
 surface_set_target(_surf);
 
 draw_clear_alpha(BLACK, 1);
-
+draw_sprite_ext(spr_bg_frame, 0, 0, 0, _w_scale, _h_scale, 0, c_white, 1);
 //draw_rectangle(0, 0, 1920 * _w_scale, 1080 * _h_scale, false);
 
 

@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-x = (1920 / 2) - 150;
+x = (1920 - 92) - 300;
 y = 876;
 
 hover = false;

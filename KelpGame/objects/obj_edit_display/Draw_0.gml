@@ -1,5 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
+if !instance_exists(obj_capture_filter) {
+draw_sprite(spr_bg_frame, 0, 0, 0);
+}
+
 var _array_pos = array_length(global.album) - 1;
 
 var _window_x = camera_get_view_x(view_camera[0]);

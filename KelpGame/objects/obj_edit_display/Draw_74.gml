@@ -19,6 +19,7 @@ surface_set_target(_surf);
 if photo_pos_step = 25 {
 draw_clear_alpha(BLACK, 1);
 
+draw_sprite_ext(spr_bg_frame, 0, 0, 0, _w_scale, _h_scale, 0, c_white, 1);
 
 
 gpu_set_blendmode(bm_subtract);

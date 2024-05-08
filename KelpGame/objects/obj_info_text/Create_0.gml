@@ -49,6 +49,18 @@ switch (name) {
 		link = "https://www.montereybayaquarium.org/animals/animals-a-to-z/leopard-shark";
 		
 	break;
+	case "Giant Sea Bass":
+		latin = "Stereolepis gigas";
+		desc = "Giant sea bass truly live up to their name, growing up to 7 feet long and around 500 pounds. Provided they escape predation by humans or great white sharks, they can live as long as 70 years.";
+		link = "https://www.montereybayaquarium.org/animals/animals-a-to-z/giant-sea-bass";
+		
+	break;
+	case "Purple Sea Urchin":
+		latin = "Strongylocentrotus purpuratus";
+		desc = "When urchin populations go unchecked, they can decimate entire kelp forests in a short period of time. The resulting ruin is called an urchin barren.";
+		link = "https://www.montereybayaquarium.org/animals/animals-a-to-z/purple-sea-urchin";
+		
+	break;
 
 
 }
