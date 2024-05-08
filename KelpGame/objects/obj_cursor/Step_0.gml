@@ -121,3 +121,23 @@ if room = rm_album {
 
 	
 }
+
+if room = rm_splash {
+
+if obj_sound_toggle.hover = true ||
+	obj_begin_btn.hover = true {
+		
+		if mouse_check_button(mb_left) = true {
+			//cursor_sprite = spr_cursor_click;
+			window_set_cursor(cr_drag);
+		} else {
+			//cursor_sprite = spr_cursor_hover;
+			window_set_cursor(cr_handpoint);
+		}
+	
+	} else {
+		//cursor_sprite = spr_cursor_point;
+		window_set_cursor(cr_default);
+	}
+	
+} 

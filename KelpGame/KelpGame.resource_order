@@ -78,6 +78,7 @@
     {"name":"obj_sheephead","order":1,"path":"objects/obj_sheephead/obj_sheephead.yy",},
     {"name":"obj_sound_toggle","order":4,"path":"objects/obj_sound_toggle/obj_sound_toggle.yy",},
     {"name":"obj_stationary","order":6,"path":"objects/obj_stationary/obj_stationary.yy",},
+    {"name":"obj_tooltip","order":10,"path":"objects/obj_tooltip/obj_tooltip.yy",},
     {"name":"rm_album","order":2,"path":"rooms/rm_album/rm_album.yy",},
     {"name":"rm_edit","order":1,"path":"rooms/rm_edit/rm_edit.yy",},
     {"name":"rm_splash","order":3,"path":"rooms/rm_splash/rm_splash.yy",},
@@ -213,6 +214,7 @@
     {"name":"spr_reticle","order":2,"path":"sprites/spr_reticle/spr_reticle.yy",},
     {"name":"spr_save","order":9,"path":"sprites/spr_save/spr_save.yy",},
     {"name":"spr_sea_bass","order":6,"path":"sprites/spr_sea_bass/spr_sea_bass.yy",},
+    {"name":"spr_sea_urchin","order":7,"path":"sprites/spr_sea_urchin/spr_sea_urchin.yy",},
     {"name":"spr_sheephead_female","order":1,"path":"sprites/spr_sheephead_female/spr_sheephead_female.yy",},
     {"name":"spr_slider_button","order":6,"path":"sprites/spr_slider_button/spr_slider_button.yy",},
     {"name":"spr_slider_outline","order":9,"path":"sprites/spr_slider_outline/spr_slider_outline.yy",},
@@ -220,6 +222,5 @@
     {"name":"spr_star_subject","order":5,"path":"sprites/spr_star_subject/spr_star_subject.yy",},
     {"name":"spr_star","order":4,"path":"sprites/spr_star/spr_star.yy",},
     {"name":"spr_zoom_icon","order":11,"path":"sprites/spr_zoom_icon/spr_zoom_icon.yy",},
-    {"name":"spr_sea_urchin","order":7,"path":"sprites/spr_sea_urchin/spr_sea_urchin.yy",},
   ],
 }

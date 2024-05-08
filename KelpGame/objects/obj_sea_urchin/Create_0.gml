@@ -7,6 +7,6 @@ event_inherited();
 sprite = spr_sea_urchin;
 name = "Purple Sea Urchin";
 arm_step = 0;
-scale = 4.5;
+scale = 2;
 //rotate = irandom_range(-10, 10);
 rotate = 0;
